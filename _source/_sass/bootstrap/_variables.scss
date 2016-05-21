@@ -8,18 +8,19 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-base:              #333 !default;
+$gray-darker:            #555 !default;
+$gray-dark:              #808080 !default;
+$gray:                   #A9A9A9 !default;
+$gray-light:             #CCC !default;
+$gray-lighter:           #E1E1E1 !default;
+$gray-lightest:          #F1F1F1 !default;
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #3eacc7 !default;
+$brand-success:         #13D673 !default;
+$brand-info:            #862990 !default;
+$brand-warning:         #192451 !default;
+$brand-danger:          #EF002F !default;
 
 
 //== Scaffolding
