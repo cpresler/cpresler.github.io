@@ -1,46 +1,45 @@
-<footer class="site-footer">
+<footer id="contact" class="site-footer">
 
-  <div class="wrapper">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Get in touch.</h2>
+            <div class="row contact-me">
+                <div class="col-xs-4 col-sm-2 col-md-1 col-md-offset-4">
+                    <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a>
+                </div>
+                {% if site.twitter_username %}
+                <div class="col-xs-4 col-sm-2 col-md-1">
+                    <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+                </div>
+                {% endif %}<!-- /twitter -->
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+                {% if site.github_username %}
+                <div class="col-xs-4 col-sm-2 col-md-1">
+                    <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                </div>
+                {% endif %} <!-- /linkedin -->
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+                {% if site.linkedin_url %}
+                <div class="col-xs-6 col-sm-2 col-md-1">
+                    <a href="{{ site.linkedin_url }}"><i class="fa fa-linkedin"></i></a>
+                </div>
+                {% endif %} <!-- /linkedin -->
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+                {% if site.behance_username %}
+                <div class="col-xs-6 col-sm-2 col-md-1">
+                    <a href="https://www.behance.net/{{ site.behance_username }}"><i class="fa fa-behance"></i></a>
+                </div>
+                {% endif %} <!-- /behance -->
+            </div>
+            <p class="copy">&copy; Christy Presler {{ site.time | date: '%Y' }}</p>
+        </div>
+    </div> <!-- /.container -->
 </footer>
 
 <!-- Scripts -->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="{{ site.baseurl }}assets/js/vendor/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

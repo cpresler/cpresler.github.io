@@ -487,6 +487,15 @@ footer {
   }
   .contact-me {
     margin-top:30px;
+    > div.col-sm-2:first-of-type {
+      margin-left: 30%;
+      @media (max-width: $screen-sm-max) {
+        margin-left: 8%;
+      }
+      @media (max-width: $screen-xs-max) {
+        margin-left:0;
+      }
+    }
   }
   a {
     color:inherit;
