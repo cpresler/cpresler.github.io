@@ -1,32 +1,28 @@
 <header class="site-header">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="#top" data-toggle="dismiss" data-target="#navbar">Christy Presler</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              {% for my_page in site.pages %}
-                {% if my_page.title %}
-                  <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-
-          </div><!--/.navbar-collapse -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand site-title" href="{{ site.baseurl }}" data-toggle="dismiss" data-target="#navbar">{{ site.title }}</a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+                <li><a class="page-link" href="{{ my_page.url }}">{{ my_page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+        </div><!--/.navbar-collapse -->
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!--<nav class="site-nav">-->
       <!--<a href="#" class="menu-icon">-->
@@ -45,7 +41,5 @@
         <!--{% endfor %}-->
       <!--</div>-->
     <!--</nav>-->
-
-  </div>
 
 </header>
