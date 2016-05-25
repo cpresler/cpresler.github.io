@@ -1,0 +1,42 @@
+---
+layout: page_resume
+title: Resume
+permalink: /resume/
+weight: 5
+---
+
+<section id="resume" class="row">
+
+    <div class="container title">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Resume</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {% for story in site.history reversed %}
+        <div class="{% cycle 'odd', 'even' %}">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>{{ story.title }}</h3>
+                    <p>{{ story.location }}</p>
+                    <p>{{ story.timeframe }}</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>What I did:</h4>
+                    <p>{{ story.did }}</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>What I learned:</h4>
+                    <p>{{ story.learned }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
+</section>

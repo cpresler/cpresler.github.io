@@ -21,3 +21,7 @@ behance_username: "cnpresler"
 markdown: kramdown
 destination: _deploy
 host: localhost
+
+# Collections
+collections:
+- history
