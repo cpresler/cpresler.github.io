@@ -1,0 +1,30 @@
+---
+title: "resume"
+classes: "row"
+weight: 5
+---
+
+{% for story in site.history reversed %}
+    <div class="{% cycle 'odd', 'even' %}">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>{{ story.title }}</h3>
+                <p>{{ story.location }}</p>
+                <p>{{ story.timeframe }}</p>
+            </div>
+            <div class="col-md-4">
+                <h4>What I did:</h4>
+                <p>{{ story.did }}</p>
+            </div>
+            <div class="col-md-4">
+                <h4>What I learned:</h4>
+                <p>{{ story.learned }}</p>
+            </div>
+        </div>
+    </div>
+    {% if story.title == "Appalachian Trail Thru-Hiker" %}
+        <div id="more" style="display:none;">
+    {% endif %}
+{% endfor %}
+        </div> <!-- /#more -->
+        <div id="show-more" class="btn btn-default">Show More</div>

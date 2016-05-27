@@ -25,3 +25,4 @@ host: localhost
 # Collections
 collections:
 - history
+- resume_sections
