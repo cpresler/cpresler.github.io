@@ -1,0 +1,31 @@
+---
+title: "projects"
+classes: "row"
+weight: 4
+---
+
+<div class="col-sm-12">
+    <h2>Selected Projects</h2>
+</div>
+
+{% assign projects = site.portfolio | sort: "weight" %}
+{% for project in projects %}
+    <div id="{{ project.shortName }}" class="col-lg-6 project-section">
+        <div class="close-details"><i class="fa fa-close"></i></div>
+        <div class="row">
+            <div class="project">
+                <h4 class="col-lg-12 col-md-6">{{ project.title }}</h4>
+                <div class="col-lg-12 col-md-6">
+                    <img src="{{ site.url}}/assets/images/projects/{{ project.image1 }}" alt="{{ project.title }}"/>
+                </div>
+            </div>
+            <div class="details summary col-lg-6">
+                <p>{{ project.description }}</p>
+                <a href="{{ project.projecturl }}" class="btn btn-info" target="_blank">Visit Page</a>
+            </div>
+        </div>
+        <div class="row">
+            {{ project.content }}
+        </div>
+    </div>
+{% endfor %}

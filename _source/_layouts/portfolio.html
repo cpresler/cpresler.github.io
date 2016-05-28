@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        <div id="{{ page.shortName }}" class="col-lg-6 project-section">
+            <div class="close-details"><i class="fa fa-close"></i></div>
+            <div class="row">
+                <div class="project">
+                    <h4 class="col-lg-12 col-md-6">{{ page.title }}</h4>
+                    <div class="col-lg-12 col-md-6">
+                        <img src="{{ site.url}}/assets/images/projects/{{ page.image1 }}" alt="{{ page.title }}"/>
+                    </div>
+                </div>
+                <div class="details summary col-lg-6">
+                    <p>{{ page.description }}</p>
+                    <a href="{{ page.projecturl }}" class="btn btn-info" target="_blank">Visit Page</a>
+                </div>
+            </div>
+            <div class="row">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+</article>
