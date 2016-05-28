@@ -30,7 +30,7 @@ $brand-danger:          #EF002F;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $gray-darker !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -50,16 +50,16 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-base:          16px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-small:         ceil(($font-size-base * 0.875)) !default; // ~14px
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h1:            floor(($font-size-base * 2.25)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2)) !default; // ~32px
+$font-size-h3:            ceil(($font-size-base * 1.75)) !default; // ~28px
+$font-size-h4:            ceil(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h5:            ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h6:            ceil(($font-size-base * 1.125)) !default; // ~18px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -70,7 +70,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+$headings-color:          $gray-darker;
 
 
 //== Iconography
@@ -108,9 +108,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       4px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -150,29 +150,29 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              $gray-darker !default;
+$btn-default-bg:                 $gray-darker !default;
+$btn-default-border:             $gray-darker !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $brand-primary !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             $brand-primary !default;
 
-$btn-success-color:              #fff !default;
+$btn-success-color:              $brand-success !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 #fff !default;
+$btn-info-color:                 $brand-info !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-border:                $brand-info !default;
 
-$btn-warning-color:              #fff !default;
+$btn-warning-color:              $brand-warning !default;
 $btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-border:             $brand-warning !default;
 
-$btn-danger-color:               #fff !default;
+$btn-danger-color:               $brand-danger !default;
 $btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-border:              $brand-danger !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -370,17 +370,17 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-color:             $gray !default;
+$navbar-default-bg:                $brand-info;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-color:                $navbar-default-color !default;
+$navbar-default-link-hover-color:          darken($navbar-default-link-color, 6.5%) !default;
+$navbar-default-link-hover-bg:             darken($navbar-default-bg, 5%);
+$navbar-default-link-active-color:         $gray-darker !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
-$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-color:       $gray-light !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
@@ -389,9 +389,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           $navbar-default-link-hover-bg !default;
+$navbar-default-toggle-icon-bar-bg:        $navbar-default-bg !default;
+$navbar-default-toggle-border-color:       transparent !default;
 
 
 //=== Inverted navbar
@@ -491,11 +491,11 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //##
 
 $jumbotron-padding:              30px !default;
-$jumbotron-color:                inherit !default;
+$jumbotron-color:                $gray-base;
 $jumbotron-bg:                   $gray-lighter !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
-$jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
+$jumbotron-heading-font-size:    ceil(($font-size-base * 2.6)) !default;
 
 
 //== Form states and alerts

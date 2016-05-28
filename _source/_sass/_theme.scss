@@ -8,7 +8,7 @@
 // Load core variables and mixins
 // --------------------------------------------------
 
-@import "bs/variables";
+@import "variables";
 @import "bs/mixins";
 
 //
@@ -52,7 +52,7 @@
 
 // Mixin for generating new styles
 @mixin btn-styles($btn-color: #555) {
-  border-color: $btn-color;
+  border: 2px solid $btn-color;
 
   &:hover,
   &:focus  {
@@ -141,7 +141,7 @@
 
 // Default navbar
 .navbar-default {
-  background-color: $brand-info;
+  //background-color: $brand-info;
   border-radius: $navbar-border-radius;
   border-bottom:1px solid darken($brand-info, 10%);
   .navbar-toggle {
@@ -328,12 +328,12 @@
 // Sections
 // -------------------------------------------------
 body {
-  padding-bottom:0;
+  padding-top:50px;
 }
 header, section {
   padding: 30px 0;
 }
-header {
+.header {
   text-align:center;
 }
 section {
@@ -536,12 +536,16 @@ p {
 // Hero Spot
 // -------------------------------------------------------
 .jumbotron {
+  margin-bottom: 0;
   #hero-pic {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
   }
   .hero-text {
-    margin-top:20%
+    margin-top:18%;
+    @media screen and (max-width: $screen-sm-max) {
+      margin-top:10%;
+    }
   }
 }
