@@ -8,7 +8,7 @@ weight: 4
     <h2>Selected Projects</h2>
 </div>
 
-{% assign projects = site.portfolio | sort: "weight" %}
+{% assign projects = site.portfolio | sort:"weight" | reverse %}
 {% for project in projects %}
     <div id="{{ project.shortName }}" class="col-lg-6 project-section">
         <div class="close-details"><i class="fa fa-close"></i></div>
