@@ -26,4 +26,5 @@ host: localhost
 collections:
 - history
 - resume_sections
-- portfolio
+- portfolio_web
+- portfolio_design

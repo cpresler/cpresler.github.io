@@ -336,7 +336,7 @@ header, section {
 .header {
   text-align:center;
 }
-section {
+section, article {
   &#subheader {
     background-color: $gray-darker;
     color:#fff;
@@ -375,7 +375,7 @@ section {
       }
     }
   }
-  &#projects {
+  &#projects, &#web-projects, &#design-projects {
     h2 {
       border-bottom: 3px solid $brand-info;
       padding-bottom: 10px;
@@ -395,6 +395,11 @@ section {
         float:left;
         margin-bottom:30px;
         cursor:pointer;
+      }
+      .border {
+        border:2px solid $gray-light;
+        border-radius:4px;
+        margin-bottom:15px;
       }
       .details {
         display:none;
@@ -428,6 +433,9 @@ section {
           border-radius:4px;
           margin-bottom:15px;
         }
+        p.solo {
+          margin-top: 30%;
+        }
       }
       .close-details {
         display:block;
@@ -447,7 +455,6 @@ section {
         }
       }
     }
-
   }
   &#resume {
     margin-top:30px;
@@ -548,4 +555,13 @@ p {
       margin-top:10%;
     }
   }
+}
+
+//
+// Pages & Posts
+// ------------------------------------------------------
+.post-title {
+  border-bottom: 3px solid $brand-primary;
+  padding-bottom: 10px;
+  margin-bottom:40px;
 }

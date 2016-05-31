@@ -2,7 +2,7 @@
 layout: page
 title: Thoughts
 permalink: /thoughts/
-weight: 4
+weight: 5
 ---
 
 This is the beginning of my blog posts page. This will need its own template? Or perhaps use the default. I'll have to think about that.
