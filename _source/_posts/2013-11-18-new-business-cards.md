@@ -4,6 +4,7 @@ author: "Christy Presler"
 title: "New Business Cards"
 feat_img: 2013/11/business-cards.jpg
 date: 2013-11-18 12:00:00 -0400
+comments: false
 categories: design branding
 ---
 

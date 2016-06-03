@@ -1,0 +1,145 @@
+---
+layout: post
+author: "Christy Presler"
+title: "Pure CSS Animation Experiment"
+feat_img: 2014/01/train-featured.jpg
+date: 2014-01-10 12:00:00 -0400
+comments: false
+categories: development
+---
+<style>
+/*Basic Layout styles*/
+div.mountains {
+	position:relative;
+	margin:30px;
+
+}
+#smoke, #train, #track {
+	position:absolute;
+}
+div.mountains, #smoke, #train {
+	width:600px;
+	height:600px;
+}
+#singlecontent article .entry img#track, #singlecontent article .entry img#smoke {
+	display:inline;
+	padding:0;
+	border:none;
+}
+div.mountains {
+	background-color:#3f6;
+	background-image:url("{{ site.blog_img_url | prepend: site.url }}2014/01/setting7.jpg");
+	background-repeat: repeat-x;
+	background-position: 0px 0;
+}
+#train {
+	background:url("{{ site.blog_img_url | prepend: site.url }}2014/01/train-01.png") repeat-x 0px 0;
+}
+#smoke {
+	z-index: 10;
+	opacity: 0;
+}
+
+/*Animations*/
+div.mountains {
+	-webkit-animation:rolling 8s infinite linear both;		/*webkit browsers*/
+	
+	-moz-animation:rolling 8s infinite linear both;		/*lt firefox 16.0*/
+	
+	-o-animation:rolling 8s infinite linear both;		/*opera*/
+	
+	animation:rolling 8s infinite linear both;
+
+}
+#smoke {
+	-webkit-animation:puff 4s infinite ease-in-out;		/*webkit browsers*/
+	
+	-moz-animation:puff 4s infinite ease-in-out;		/*lt firefox 16.0*/
+
+	-o-animation:puff 4s infinite ease-in-out;		/*opera*/
+
+	animation:puff 4s infinite ease-in-out;
+}
+
+
+/*Keyframes*/
+/*Move the Background*/
+@-webkit-keyframes rolling {				/*webkit browsers*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@-moz-keyframes rolling {					/*lt firefox 16.0*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@-o-keyframes rolling {						/*opera*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@keyframes rolling {
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+/*Smoke Puffs*/
+@-webkit-keyframes puff {					/*webkit browsers*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -webkit-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@-moz-keyframes puff {						/*lt firefox 16.0*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -moz-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@-o-keyframes puff {						/*opera*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -o-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@keyframes puff {
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; transform: translate(-40%, -15%) rotate(-15deg);}
+}
+</style>
+
+<h4>I’ve been learning about CSS3 animations and decided to try animating a train:</h4>
+
+<div class="mountains">
+    <div id="train">
+        <img id="track" class="no-border" src="{{ site.blog_img_url | prepend: site.url }}2014/01/train-1.png" 
+             alt="" width="600" height="600" />
+        <img id="smoke" class="no-border" src="{{ site.blog_img_url | prepend: site.url }}2014/01/smoke-01.png" alt="" 
+             width="600" 
+             height="600" />
+    </div>
+</div>
+
+<p>This animation is entirely created by CSS which has some really awesome implications. First off, it is 
+	automatically optimized by the browser giving it smoother transitions and making it less likely to get choppy on a slower machine. It is also really light weight. If it wasn't for the vendor prefixes currently required for it to run in most browsers this whole animation would take 6 lines of HTML and less than 20 lines of CSS. This particular animation isn't interactive, but they can easily be added to :hover and :focus states for great interactive flourishes. At the moment I don't know of a good way to essentially play and pause an animation like this without JavaScript, but it is still incredibly useful for adding small visual responses to viewer actions on a site.</p>
+
+<p>At the moment I don't know of any good way to implement this in IE versions older than IE 10, though it is 
+	supported in 10, so that is exciting.</p>
+
+<h4>Basic code for CSS Animations</h4>
+
+<p>Before you get to animating your images, you need to style them in with CSS so that they stack on top of each other. 
+In this case I set `position:relative;` on the containing div and `position:absolute;` on all the other images I stacked on top of it. Once you have your images styled the way you want the code structure for a css animation looks like this:</p>
+<pre><code>
+#smoke {
+    z-index: 10;
+    opacity: 0;
+}
+#smoke {
+    animation:puff 4s infinite ease-in-out;
+}
+@keyframes puff {
+    0% {opacity:0;}
+    60% {opacity:.5;}
+    100% {opacity:0; transform: translate(-40%, -15%) rotate(-15deg);}
+}
+</code>
+</pre>
+
+<p>The first rule shows the original state for the smoke image. The second rule activates the animation defined in the 
+third rule, giving it length, iteration, and timing-function. The third rule defines the changes that take place during the animation at different points. You can define the different stages from 0% to 100%. I left out the vendor prefixes to save space here, but adding them in isn't too tough once you have it set up correctly.</p>
