@@ -9,22 +9,43 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-sm-10">
+                {% if page.title != "Thoughts" %}
                 <header class="title">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            {% if page.title-display %}
-                            <h1 class="post-title">{{ page.title-display }}</h1>
-                            {% else %}
-                            <h1 class="post-title">{{ page.title }}</h1>
-                            {% endif %}
-                            {% if page.subheader %}
-                            <p class="lead">{{ page.subheader }}</p>
-                            {% endif %}
-                        </div>
-                    </div>
+                    {% if page.title-display %}
+                    <h1 class="page-title">{{ page.title-display }}</h1>
+                    {% else %}
+                    <h1 class="page-title">{{ page.title }}</h1>
+                    {% endif %}
+                    {% if page.subheader %}
+                    <p class="lead">{{ page.subheader }}</p>
+                    {% endif %}
                 </header>
+                {% endif %}
                 <div class="row">
-                    {{ content }}
+                    <ul class="post-list">
+                    {% if page.category %}
+                        <!--loop through category-->
+                    {% else %}
+                        <div class="row">
+                        {% for post in site.posts %}
+                            {% assign loopindex = forloop.index | modulo: 3 %}
+                            <li class="col-sm-4">
+                                <a href="{{ post.url | prepend: site.url }}">
+                                    <div class="post-summary">
+                                        <img src="{{ site.blog_img_url | prepend: site.url }}{{ post.feat_img }}"
+                                             alt="{{ post.title }}">
+                                        <h4>{{ post.title }}</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            {% if loopindex == 0 %}
+                            </div>
+                            <div class="row">
+                            {% endif %}
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                    </ul>
                 </div>
             </div> <!-- /.col-sm-10 -->
             <div class="col-sm-2">

@@ -627,3 +627,42 @@ p {
     right:0;
   }
 }
+.page {
+  padding-top:10px;
+  background-color:$gray-lightest;
+  .page-title {
+    border-bottom: 3px solid $brand-primary;
+    padding-bottom: 10px;
+  }
+  .sidebar {
+    background-color: #fff;
+  }
+}
+.post-list {
+  list-style:none;
+  text-align: center;
+  .row {
+
+  }
+  li {
+    margin-bottom:15px;
+  }
+  a:hover {
+    text-decoration: none;
+    .post-summary {
+      background-color:$brand-primary;
+      border-color: $brand-primary;
+      > h4 {
+        color:$gray-lightest;
+      }
+    }
+  }
+  .post-summary {
+    min-height:370px;
+    border: 2px solid $gray-lighter;
+    background-color:#fff;
+    > h4 {
+      color: $brand-primary;
+    }
+  }
+}
