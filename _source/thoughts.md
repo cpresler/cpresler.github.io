@@ -5,17 +5,19 @@ permalink: /thoughts/
 weight: 5
 ---
 
-This is the beginning of my blog posts page. This will need its own template? Or perhaps use the default. I'll have to think about that.
-
-Attempting to loop through posts:
+Lets loop through some posts:
 
 <ul class="post-list">
 {% for post in site.posts %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% if post.image %}
+        <a class="post-link" href="{{ post.url | prepend: site.url }}"><img src="{{ site.url }}{{ post.image | prepend: 
+    site.blog_img_url }}" /></a>
+    {% endif %}
 
     <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
     </h2>
   </li>
 {% endfor %}

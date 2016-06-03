@@ -13,7 +13,10 @@ layout: default
               {% if page.title-display %}
                 <h1 class="post-title">{{ page.title-display }}</h1>
               {% else %}
-                <h1 class="post-title">{{ page.title-display }}</h1>
+                <h1 class="post-title">{{ page.title }}</h1>
+              {% endif %}
+              {% if page.subheader %}
+                <p class="lead">{{ page.subheader }}</p>
               {% endif %}
           </div>
         </div>
