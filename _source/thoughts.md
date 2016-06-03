@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_blog
 title: Thoughts
 permalink: /thoughts/
 weight: 5

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% if page.shortname %}
+<article id="{{ page.shortname }}" class="page">
+{% else %}
+<article class="page">
+{% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <header class="title">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            {% if page.title-display %}
+                            <h1 class="post-title">{{ page.title-display }}</h1>
+                            {% else %}
+                            <h1 class="post-title">{{ page.title }}</h1>
+                            {% endif %}
+                            {% if page.subheader %}
+                            <p class="lead">{{ page.subheader }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </header>
+                <div class="row">
+                    {{ content }}
+                </div>
+            </div> <!-- /.col-sm-10 -->
+            <div class="col-sm-2">
+                {% include sidebar.html %}
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</article>
