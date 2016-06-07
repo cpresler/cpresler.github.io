@@ -24,10 +24,12 @@ layout: default
                 <div class="row">
                     <ul class="post-list">
                     {% if page.category %}
-                        <!--loop through category-->
+                        {% assign posts = site.categories.[page.category] %}
                     {% else %}
+                        {% assign posts = site.posts %}
+                    {% endif %}
                         <div class="row">
-                        {% for post in site.posts %}
+                        {% for post in posts %}
                             {% assign loopindex = forloop.index | modulo: 3 %}
                             <li class="col-sm-4">
                                 <a href="{{ post.url | prepend: site.url }}">
@@ -44,7 +46,6 @@ layout: default
                             {% endif %}
                         {% endfor %}
                         </div>
-                    {% endif %}
                     </ul>
                 </div>
             </div> <!-- /.col-sm-10 -->

@@ -7,7 +7,7 @@
 
     <ul class="topics">
         {% for category in site.categories %}
-            <li><a href="#todo">{{ category[0] | capitalize }}</a></li>
+            <li><a href="{{ site.url }}/thoughts/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
         {% endfor %}
     </ul>
 </section>
