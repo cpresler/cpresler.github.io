@@ -585,16 +585,7 @@ p {
   margin-top:8%;
 }
 .post-meta {
-  .author {
     text-align: right;
-    padding-top:7px;
-  }
-  time {
-    border: 2px solid $gray-lighter;
-    padding:7px;
-    text-align: center;
-    text-transform: uppercase;
-  }
 }
 .post-content {
   border: 2px solid $gray-lighter;
@@ -612,20 +603,10 @@ p {
     }
   }
 }
-.other-posts {
-  position:relative;
-  height:100px;
-  .prev, .next {
-    max-width: 50%;
-    position:absolute;
-    top:0;
-  }
-  .prev {
-    left:0;
-  }
-  .next {
-    right:0;
-  }
+.prev, .next {
+  width:100%;
+  word-break: break-all;
+  margin: 5px 0;
 }
 .page {
   padding-top:10px;
