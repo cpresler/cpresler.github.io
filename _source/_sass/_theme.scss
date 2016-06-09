@@ -395,6 +395,7 @@ section, article {
         float:left;
         margin-bottom:30px;
         cursor:pointer;
+        background-color: #fff;
       }
       .border {
         border:2px solid $gray-light;
@@ -414,43 +415,44 @@ section, article {
           }
         }
       }
-    }
-    .project-section.active {
-      width:100%;
-      background-color:$gray-lighter;
-      border-radius:10px;
-      margin-bottom: 30px;
-      position:relative;
-      .project {
-        border:none;
-        z-index:4;
-      }
-      .details{
-        text-align:center;
-        display:block;
-        img {
-          border:2px solid $gray-light;
-          border-radius:4px;
-          margin-bottom:15px;
+      &.active {
+        width:100%;
+        background-color:$gray-lighter;
+        border-radius:10px;
+        margin-bottom: 30px;
+        position:relative;
+        .project {
+          border:none;
+          z-index:4;
+          background-color:transparent;
         }
-        p.solo {
-          margin-top: 30%;
+        .details{
+          text-align:center;
+          display:block;
+          img {
+            border:2px solid $gray-light;
+            border-radius:4px;
+            margin-bottom:15px;
+          }
+          p.solo {
+            margin-top: 30%;
+          }
         }
-      }
-      .close-details {
-        display:block;
-        position:absolute;
-        top:10px;
-        right:10px;
-        width:30px;
-        height:30px;
-        z-index:10;
-        cursor:pointer;
-        .fa-close {
-          color:$gray-light;
-          font-size:2.25em;
-          &:hover {
-            color:$gray;
+        .close-details {
+          display:block;
+          position:absolute;
+          top:10px;
+          right:10px;
+          width:30px;
+          height:30px;
+          z-index:10;
+          cursor:pointer;
+          .fa-close {
+            color:$gray-light;
+            font-size:2.25em;
+            &:hover {
+              color:$gray;
+            }
           }
         }
       }
@@ -644,6 +646,62 @@ p {
     background-color:#fff;
     > h4 {
       color: $brand-primary;
+    }
+  }
+}
+// Page Specific Styles
+.about {
+  padding-top:0;
+  .row {
+    background-color:#fff;
+  }
+  .hero {
+    border: 2px solid $gray-lighter;
+    padding: 15px 0;
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+  }
+  .lead {
+    margin-top:12%;
+    color:$brand-info;
+  }
+  .about-txt {
+    margin-top:20px;
+    border: 2px solid $gray-lighter;
+    padding:15px;
+  }
+}
+.skills {
+  padding-top:0;
+  .sidebar {
+    margin: 0;
+    ul {
+      list-style: none;
+      padding-left:5px;
+    }
+    > ul > li {
+      text-transform: uppercase;
+      h6 {
+        margin-bottom:2px;
+      }
+      > ul {
+        padding-left:0;
+        > li {
+          text-transform: none;
+          color:$brand-info;
+          margin-top:8px;
+          > ul {
+            padding-left: 0;
+            > li {
+              color:$gray-base;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        margin-top:8px;
+      }
     }
   }
 }
