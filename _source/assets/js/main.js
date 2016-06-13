@@ -163,7 +163,8 @@ $(document).ready(function() {
         }
     });
     $('.contact').click(function() {
-        goToContact()
+        goToContact();
+        $(".navbar-collapse").collapse('hide');
     });
     $('.twitter, .git, .linkedin, .behance').click(function() {
         $('#contact-me').slideUp();

@@ -638,6 +638,11 @@ p {
       margin-top:6%;
     }
   }
+  .button-group {
+    .btn {
+      margin:5px;
+    }
+  }
 }
 
 //
@@ -705,6 +710,7 @@ p {
 .post-list {
   list-style:none;
   text-align: center;
+  padding-left:0;
   .row {
 
   }
@@ -725,6 +731,9 @@ p {
     min-height:370px;
     border: 2px solid $gray-lighter;
     background-color:#fff;
+    @media (max-width: $screen-xs-max) {
+      min-height:340px;
+    }
     > h4 {
       color: $brand-primary;
     }
