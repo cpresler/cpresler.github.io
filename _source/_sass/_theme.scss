@@ -344,6 +344,9 @@ section, article {
     .lead {
       font-size: ceil(($font-size-base * 1.25));
       margin-bottom:0;
+      @media (max-width:$screen-sm-max) {
+        margin-bottom: 20px;
+      }
     }
   }
   &#statement {
@@ -772,6 +775,7 @@ p {
       text-transform: uppercase;
       h6 {
         margin-bottom:2px;
+        font-weight:bold;
       }
       > ul {
         padding-left:0;
