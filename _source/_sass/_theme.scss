@@ -726,6 +726,14 @@ p {
 }
 // Page Specific Styles
 .home {
+  .thoughts {
+    background-color:$gray-lightest;
+    .page-title {
+      border-bottom: 3px solid $brand-primary;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+    }
+  }
   .see-all {
     text-align:center;
   }

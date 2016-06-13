@@ -21,6 +21,7 @@ layout: default
     </div>
   </section>
 
+    <!-- PROJECTS -->
   <section id="projects">
     <header class="container title">
       <div class="row">
@@ -30,7 +31,6 @@ layout: default
       </div>
     </header>
     <div class="container">
-        <!-- WEB PROJECTS-->
       <div class="row">
         {% assign web_projects = site.portfolio_web | sort:"weight" | reverse %}
         {% for project in web_projects limit:4 %}
@@ -63,24 +63,52 @@ layout: default
     </div>
     <div class="container see-all">
       <div class="button-group">
-        <a href="{{ site.url }}/web-projects" class="btn-success btn">See All Web Projects</a>
-        <a href="{{ site.url }}/design-projects" class="btn-success btn">See All Design Projects</a>
+        <a href="{{ site.url }}/web-projects/" class="btn-success btn">See All Web Projects</a>
+        <a href="{{ site.url }}/design-projects/" class="btn-success btn">See All Design Projects</a>
       </div>
     </div>
   </section>
+    <!-- POSTS -->
+  <section class="thoughts">
+    <header class="container title">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="page-title">Selected Posts</h2>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+        <ul class="post-list">
+          {% assign posts = site.posts %}
+          <div class="row">
+          {% for post in posts limit:6 %}
+            {% assign loopindex = forloop.index | modulo: 3 %}
+            <li class="col-sm-4">
+              <a href="{{ post.url | prepend: site.url }}">
+                <div class="post-summary">
+                  <img src="{{ site.blog_img_url | prepend: site.url }}{{ post.feat_img }}"
+                       alt="{{ post.title }}">
+                  <h4>{{ post.title }}</h4>
+                </div>
+              </a>
+            </li>
+            {% if loopindex == 0 %}
+          </div>
+          <div class="row">
+            {% endif %}
+          {% endfor %}
+          </div>
+        </ul>
+      </div>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+    <div class="container see-all">
+      <div class="button-group">
+        <a href="{{ site.url }}/thoughts/" class="btn-success btn">See All Posts</a>
+      </div>
+    </div>
+  </section>
 
 </div>
