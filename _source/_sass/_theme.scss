@@ -620,6 +620,19 @@ p {
     }
   }
 }
+.home {
+  .jumbotron {
+    .hero-text {
+      margin-top:6%;
+    }
+    .lead {
+      margin-top:4%;
+    }
+    .button-group {
+      margin-top:6%;
+    }
+  }
+}
 
 //
 // Pages & Posts
@@ -712,6 +725,11 @@ p {
   }
 }
 // Page Specific Styles
+.home {
+  .see-all {
+    text-align:center;
+  }
+}
 .about {
   padding-top:0;
   .row {

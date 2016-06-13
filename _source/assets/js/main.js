@@ -143,7 +143,7 @@ var formVal = {
 };
 
 $(document).ready(function() {
-    $('.navbar-nav a, .navbar-brand, .contact > a').click(function(){
+    $('.navbar-nav a, .navbar-brand, .contact > a, .button-group > .contact, .button-group > .work').click(function(){
         navScroll(this);
     });
 

@@ -3,8 +3,71 @@ layout: default
 ---
 
 <div class="home">
+  <section id="top" class="jumbotron header">
+    <div class="container">
+      <div class="row">
+        <img id="hero-pic" src="{{ site.url }}/assets/images/me_color_lg.jpg" alt="Christy Presler" class="col-sm-4"/>
+        <div class="col-sm-8">
+          <h1 class="hero-text">Hello, I'm Christy.<br/>I design and build websites.</h1>
+          <p class="lead">I value efficient and effective communication and believe that good design delivers great
+            value.</p>
+          <div class="button-group">
+            <a href="{{ site.url }}/about/" class="btn btn-primary btn-lg">More About Me</a>
+            <a href="#projects" class="btn btn-primary btn-lg work">My Work</a>
+            <a href="#contact" class="btn btn-primary btn-lg contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h1 class="page-heading">Home</h1>
+  <section id="projects">
+    <header class="container title">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="page-title">Selected Projects</h2>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+        <!-- WEB PROJECTS-->
+      <div class="row">
+        {% assign web_projects = site.portfolio_web | sort:"weight" | reverse %}
+        {% for project in web_projects limit:4 %}
+        <div id="{{ project.shortName }}" class="col-lg-6 project-section">
+          <div class="close-details"><i class="fa fa-close"></i></div>
+          <div class="row">
+            <div class="project">
+              <h4 class="col-lg-12 col-md-6">{{ project.title }}</h4>
+              <div class="col-lg-12 col-md-6">
+                {% if project.image1-border %}
+                <img src="{{ site.url}}/assets/images/projects/{{ project.image1 }}" alt="{{ project.title }}" class="border"/>
+                {% else %}
+                <img src="{{ site.url}}/assets/images/projects/{{ project.image1 }}" alt="{{ project.title }}"/>
+                {% endif %}
+              </div>
+            </div>
+            <div class="details summary col-lg-6">
+              <p>{{ project.description }}</p>
+              {%if project.projecturl %}
+              <a href="{{ project.projecturl }}" class="btn btn-info" target="_blank">Visit Page</a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            {{ project.content }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="container see-all">
+      <div class="button-group">
+        <a href="{{ site.url }}/web-projects" class="btn-success btn">See All Web Projects</a>
+        <a href="{{ site.url }}/design-projects" class="btn-success btn">See All Design Projects</a>
+      </div>
+    </div>
+  </section>
 
   <ul class="post-list">
     {% for post in site.posts %}

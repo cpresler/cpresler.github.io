@@ -9,7 +9,7 @@ weight: 4
 </div>
 
 {% assign projects = site.portfolio_web | sort:"weight" | reverse | limit:4 %}
-{% for project in projects %}
+{% for project in projects limit:4 %}
     <div id="{{ project.shortName }}" class="col-lg-6 project-section">
         <div class="close-details"><i class="fa fa-close"></i></div>
         <div class="row">
