@@ -470,6 +470,9 @@ section, article {
     .odd,.even {
       padding:10px 15px;
       border-bottom:2px solid $gray-light;
+      @media (max-width: $screen-sm-max) {
+        padding:5px;
+      }
     }
     .odd {
       border-left:2px solid $gray-light;
@@ -479,7 +482,7 @@ section, article {
       padding:10px 15px;
     }
     #show-more {
-      margin:30px 42.5%;
+      margin:30px auto;
     }
   }
 }

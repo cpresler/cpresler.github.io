@@ -22,13 +22,13 @@ function navScroll(el) {
 
 }
 
-function hideNav(el) {
-    if(true) {
-        $(el).css("top:-48px;");
-    } else {
-        $(el).css("top:0;");
-    }
-}
+// function hideNav(el) {
+//     if(true) {
+//         $(el).css("top:-48px;");
+//     } else {
+//         $(el).css("top:0;");
+//     }
+// }
 
 function details(el) {
     var section = $(el).closest('.project-section'),
