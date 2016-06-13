@@ -510,10 +510,10 @@ footer {
     color:inherit;
     font-weight:lighter;
     font-size:1.75em;
-    &:hover, &:focus {
+    &:hover, &:focus, &.active {
       color:inherit;
       i.fa {
-        background-color: rgba(241,241,241,0.2);
+        background-color: rgba(241,241,241,0.5);
       }
     }
     i.fa {
@@ -531,6 +531,68 @@ footer {
       font-size:.75em;
 
     }
+  }
+  #contact-me {
+    display:none;
+    background-color: rgba(241,241,241,0.9);
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    input[type="text"], input[type="email"], textarea  {
+      border-radius: $border-radius-base;
+      border: 2px solid $gray-light;
+      margin-bottom: 5px;
+      background-color: rgba(241, 241, 241, 0.9);
+      font-size: $font-size-large;
+      padding: 5px 15px;
+      color: rgb(51, 51, 51);
+      &:hover, &:active {
+        background-color:#fff;
+      }
+      &::-webkit-input-placeholder {
+        color:$gray-dark;
+      }
+      &:-moz-placeholder {
+        color:$gray-dark;
+      }
+      &::-moz-placeholder {
+        color:$gray-dark;
+      }
+      &:-ms-input-placeholder {
+        color:$gray-dark;
+      }
+      &.error {
+        box-shadow: 0 0 5px $brand-danger;
+        border-color:$brand-danger;
+      }
+    }
+    .error-msg {
+      text-align: left;
+      font-size:$font-size-base;
+      font-style: italic;
+      color:$brand-danger;
+      padding: 0 0 5px 10px;
+    }
+    input[type="submit"] {
+      background-color: transparent;//rgba(241, 241, 241, 0.9);
+      font-size: $font-size-large;
+      font-weight:bold;
+      &:hover, &:active {
+        background-color:$brand-primary;
+      }
+    }
+  }
+}
+#thanks, #form-error {
+  text-align: center;
+  display:none;
+  background-color: rgba(241,241,241,0.9);
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  p {
+    color:$gray-base;
+    font-size:$font-size-base;
   }
 }
 

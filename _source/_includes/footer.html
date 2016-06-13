@@ -4,32 +4,57 @@
         <div class="row text-center">
             <h2>Get in touch.</h2>
             <div class="row contact-me">
-                <div class="col-xs-4 col-sm-2 col-md-1 col-md-offset-4">
-                    <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a>
+                <div class="col-xs-4 col-sm-2 col-md-1 col-md-offset-4 contact">
+                    <a href="#contact"><i class="fa fa-envelope-o"></i></a>
                 </div>
                 {% if site.twitter_username %}
-                <div class="col-xs-4 col-sm-2 col-md-1">
-                    <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+                <div class="col-xs-4 col-sm-2 col-md-1 twitter">
+                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a>
                 </div>
                 {% endif %}<!-- /twitter -->
 
                 {% if site.github_username %}
-                <div class="col-xs-4 col-sm-2 col-md-1">
-                    <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                <div class="col-xs-4 col-sm-2 col-md-1 git">
+                    <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
                 {% endif %} <!-- /linkedin -->
 
                 {% if site.linkedin_url %}
-                <div class="col-xs-6 col-sm-2 col-md-1">
-                    <a href="{{ site.linkedin_url }}"><i class="fa fa-linkedin"></i></a>
+                <div class="col-xs-6 col-sm-2 col-md-1 linkedin">
+                    <a href="{{ site.linkedin_url }}" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
                 {% endif %} <!-- /linkedin -->
 
                 {% if site.behance_username %}
-                <div class="col-xs-6 col-sm-2 col-md-1">
-                    <a href="https://www.behance.net/{{ site.behance_username }}"><i class="fa fa-behance"></i></a>
+                <div class="col-xs-6 col-sm-2 col-md-1 behance">
+                    <a href="https://www.behance.net/{{ site.behance_username }}" target="_blank"><i class="fa fa-behance"></i></a>
                 </div>
                 {% endif %} <!-- /behance -->
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form id="contact-me" class="row" action="">
+                        <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="text" name="_format" value="plain" style="display:none" />
+
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="col-xs-12">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="_replyto" id="email" placeholder="Email" class="col-xs-12">
+                        <label for="topic" class="sr-only">Topic</label>
+                        <input type="text" name="_subject" id="topic" placeholder="Topic" class="col-xs-12"/>
+                        <label for="msg" class="sr-only">Description</label>
+                        <textarea id="msg" rows="10" cols="40" name="message" placeholder="Description"
+                                  class="col-xs-12"></textarea>
+                        <input type="submit" value="SEND" class="col-xs-12 btn btn-primary">
+                    </form>
+                    <div id="thanks">
+                        <h3>Thank you for contacting me!</h3>
+                        <p>I look forward to getting in touch with you as soon as I can.</p>
+                    </div>
+                    <div id="form-error"></div>
+                </div>
             </div>
             <p class="copy">&copy; Christy Presler {{ site.time | date: '%Y' }}</p>
         </div>
