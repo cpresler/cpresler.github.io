@@ -13,7 +13,11 @@ weight: 5
                 <p>{{ story.timeframe }}</p>
             </div>
             <div class="col-md-4">
+                {%if forloop.first == true %}
+                <h4>What I do:</h4>
+                {% else %}
                 <h4>What I did:</h4>
+                {% endif %}
                 <p>{{ story.did }}</p>
             </div>
             <div class="col-md-4">
