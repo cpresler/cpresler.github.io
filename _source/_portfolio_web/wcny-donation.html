@@ -1,0 +1,27 @@
+---
+title: "WCNY Donation Form"
+shortName: "wcny-donation"
+projecturl: https://www.wcny.org/donate/
+description: "I redesigned and rebuilt WCNY's primary donation form to improve usability and expand functionality to include new member benefit options."
+image1: wcny-donation/wcny-donation-display.png
+weight: 9
+---
+
+
+<div class="details col-lg-6">
+    <p>The default form provides suggests giving levels, and dynamically updates your level based on your gift, while also providing you the option to choose additional member benefits at certain levels.</p>
+    <p>For members, I created a login option by incorporating a member data API. This allows the form to return your current giving level, and adjust the amounts required to upgrade to each level based on your current gift. It also makes completing the form simpler by auto filling the basic billing information.</p>
+    <p>This project created some very interesting challenges because this payment gateway is hosted by BluePay for security reasons, and as a result I had no option of generating any functionality server-side. Also with so much logic hinging on my calculations, I had to be very careful that my Javascript returned appropriately rounded and accurate numbers.</p>
+    <p>In addition to the challenges posed by no server access, BluePay hosted forms only accept a specific set of data points, which do not generally include things like extra benefit choices, or specified giving levels. Therefore, I had to make sure that all data submitted by the form was consolidated down into the acceptable data points in order to avoid an error. I managed this by dynamically updating the values of those data elements based on user choices and then disabling all other data inputs before submitting the form.</p>
+</div>
+<div class="details col-lg-6">
+    <img src="../assets/images/projects/{{ page.shortName }}/join-new-platinum.png" alt="WCNY Donation Form New Members"/>
+</div>
+</div>
+<div class="row">
+    <div class="details col-lg-6">
+        <img src="../assets/images/projects/{{ page.shortName }}/member-login-form.png" alt="WCNY Donation Form Member Login"/>
+    </div>
+    <div class="details col-lg-6">
+        <img src="../assets/images/projects/{{ page.shortName }}/member-logged-in.png" alt="WCNY Donation Form Logged in Member"/>
+    </div>
