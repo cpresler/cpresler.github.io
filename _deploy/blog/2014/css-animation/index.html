@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="Shortcut Icon" href="http://christypresler.com/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="http://christypresler.com/assets/images/apple-touch-icon.png">
+  <title>Pure CSS Animation Experiment</title>
+  <meta name="description" content="/*Basic Layout styles*/div.mountains {	position:relative;	margin:30px;">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://christypresler.com//blog/2014/css-animation/">
+  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://christypresler.com//feed.xml">
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand site-title" href="/" data-toggle="dismiss" data-target="#navbar">Christy Presler</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                  <li><a class="page-link" href="/about/">About</a></li>
+                  
+              
+            
+          
+            
+              
+                
+                  <li><a class="page-link" href="/web-projects/">Web Projects</a></li>
+                  
+              
+            
+          
+            
+              
+                
+                  <li><a class="page-link" href="/design-projects/">Design Projects</a></li>
+                  
+              
+            
+          
+            
+              
+                
+                  <li><a class="page-link" href="/thoughts/">Thoughts</a></li>
+                  
+              
+            
+          
+            
+              
+                
+                  <li><a class="page-link" href="/resume/">Resume</a></li>
+                  
+              
+            
+          
+          <li><a class="page-link contact" href="#contact">Contact</a></li>
+        </ul>
+
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+</nav>
+
+
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="container" >
+      <div class="row">
+        <div class="col-sm-10">
+            <header class="post-header">
+                <div class="row">
+                    
+                    <div class="col-md-3">
+                        <img itemprop="image" src="http://christypresler.com/assets/images/blog/2014/01/train-featured.jpg"
+                             alt="Pure CSS Animation Experiment">
+                    </div>
+                    <div class="col-md-9">
+                    
+                        <h1 class="post-title" itemprop="name headline">Pure CSS Animation Experiment</h1>
+                        <div class="post-meta">
+                            
+                            <span class="author" itemprop="author"
+                               itemscope itemtype="http://schema.org/Person">
+                                By <span itemprop="name">Christy Presler</span>
+                            
+                            </span> on <time datetime="2014-01-10T11:00:00-05:00"
+                                  itemprop="datePublished">
+                                January 10, 2014
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div itemprop="articleBody">
+              <div class="row">
+                  <div class="post-content col-xs-12">
+                    <style>
+/*Basic Layout styles*/
+div.mountains {
+	position:relative;
+	margin:30px;
+
+}
+#smoke, #train, #track {
+	position:absolute;
+}
+div.mountains, #smoke, #train {
+	width:600px;
+	height:600px;
+}
+#singlecontent article .entry img#track, #singlecontent article .entry img#smoke {
+	display:inline;
+	padding:0;
+	border:none;
+}
+div.mountains {
+	background-color:#3f6;
+	background-image:url("http://christypresler.com/assets/images/blog/2014/01/setting7.jpg");
+	background-repeat: repeat-x;
+	background-position: 0px 0;
+}
+#train {
+	background:url("http://christypresler.com/assets/images/blog/2014/01/train-01.png") repeat-x 0px 0;
+}
+#smoke {
+	z-index: 10;
+	opacity: 0;
+}
+
+/*Animations*/
+div.mountains {
+	-webkit-animation:rolling 8s infinite linear both;		/*webkit browsers*/
+	
+	-moz-animation:rolling 8s infinite linear both;		/*lt firefox 16.0*/
+	
+	-o-animation:rolling 8s infinite linear both;		/*opera*/
+	
+	animation:rolling 8s infinite linear both;
+
+}
+#smoke {
+	-webkit-animation:puff 4s infinite ease-in-out;		/*webkit browsers*/
+	
+	-moz-animation:puff 4s infinite ease-in-out;		/*lt firefox 16.0*/
+
+	-o-animation:puff 4s infinite ease-in-out;		/*opera*/
+
+	animation:puff 4s infinite ease-in-out;
+}
+
+
+/*Keyframes*/
+/*Move the Background*/
+@-webkit-keyframes rolling {				/*webkit browsers*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@-moz-keyframes rolling {					/*lt firefox 16.0*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@-o-keyframes rolling {						/*opera*/
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+@keyframes rolling {
+	0% 	 {background-position: 0px 0;}
+	100% {background-position:-1200px 0;}
+}
+/*Smoke Puffs*/
+@-webkit-keyframes puff {					/*webkit browsers*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -webkit-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@-moz-keyframes puff {						/*lt firefox 16.0*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -moz-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@-o-keyframes puff {						/*opera*/
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; -o-transform: translate(-40%, -15%) rotate(-15deg);}
+}
+@keyframes puff {
+	0% 	 {opacity:0;}
+	60%  {opacity:.5;}
+	100% {opacity:0; transform: translate(-40%, -15%) rotate(-15deg);}
+}
+</style>
+
+<h4>I’ve been learning about CSS3 animations and decided to try animating a train:</h4>
+
+<div class="mountains">
+    <div id="train">
+        <img id="track" class="no-border" src="http://christypresler.com/assets/images/blog/2014/01/train-1.png" 
+             alt="" width="600" height="600" />
+        <img id="smoke" class="no-border" src="http://christypresler.com/assets/images/blog/2014/01/smoke-01.png" alt="" 
+             width="600" 
+             height="600" />
+    </div>
+</div>
+
+<p>This animation is entirely created by CSS which has some really awesome implications. First off, it is 
+	automatically optimized by the browser giving it smoother transitions and making it less likely to get choppy on a slower machine. It is also really light weight. If it wasn't for the vendor prefixes currently required for it to run in most browsers this whole animation would take 6 lines of HTML and less than 20 lines of CSS. This particular animation isn't interactive, but they can easily be added to :hover and :focus states for great interactive flourishes. At the moment I don't know of a good way to essentially play and pause an animation like this without JavaScript, but it is still incredibly useful for adding small visual responses to viewer actions on a site.</p>
+
+<p>At the moment I don't know of any good way to implement this in IE versions older than IE 10, though it is 
+	supported in 10, so that is exciting.</p>
+
+<h4>Basic code for CSS Animations</h4>
+
+<p>Before you get to animating your images, you need to style them in with CSS so that they stack on top of each other. 
+In this case I set `position:relative;` on the containing div and `position:absolute;` on all the other images I stacked on top of it. Once you have your images styled the way you want the code structure for a css animation looks like this:</p>
+<pre><code>
+#smoke {
+    z-index: 10;
+    opacity: 0;
+}
+#smoke {
+    animation:puff 4s infinite ease-in-out;
+}
+@keyframes puff {
+    0% {opacity:0;}
+    60% {opacity:.5;}
+    100% {opacity:0; transform: translate(-40%, -15%) rotate(-15deg);}
+}
+</code>
+</pre>
+
+<p>The first rule shows the original state for the smoke image. The second rule activates the animation defined in the 
+third rule, giving it length, iteration, and timing-function. The third rule defines the changes that take place during the animation at different points. You can define the different stages from 0% to 100%. I left out the vendor prefixes to save space here, but adding them in isn't too tough once you have it set up correctly.</p>
+
+                  </div>
+              </div>
+            </div>
+        </div>
+      <div class="col-sm-2">
+        <section class="sidebar">
+    <h4>Thoughts</h4>
+    <p>A collection of ideas, inspiration, works in progress, and other bits that come across my workbench in the form of design and development.</p>
+</section>
+<section class="sidebar">
+    <h4>Topics</h4>
+
+    <ul class="topics">
+        
+            <li><a href="http://christypresler.com/thoughts/design">Design</a></li>
+        
+            <li><a href="http://christypresler.com/thoughts/branding">Branding</a></li>
+        
+            <li><a href="http://christypresler.com/thoughts/icons">Icons</a></li>
+        
+            <li><a href="http://christypresler.com/thoughts/development">Development</a></li>
+        
+            <li><a href="http://christypresler.com/thoughts/origami">Origami</a></li>
+        
+    </ul>
+</section>
+
+
+<a href="/blog/2014/paper-crane/">
+    <div class="btn btn-default next">
+        Next <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+</a>
+
+
+
+<a href="/blog/2013/icon-30/">
+    <div class="btn btn-default prev">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i> Previous
+    </div>
+</a>
+
+
+
+
+      </div>
+
+      </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</article>
+
+
+    <footer id="contact" class="site-footer">
+
+    <div class="container">
+        <div class="row text-center">
+            <h2>Get in touch.</h2>
+            <div class="row contact-me">
+                <div class="col-xs-4 col-sm-2 col-md-1 col-md-offset-4 contact">
+                    <a href="#contact"><i class="fa fa-envelope-o"></i></a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 twitter">
+                    <a href="https://twitter.com/@cnpresler" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+                <!-- /twitter -->
+
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 git">
+                    <a href="https://github.com/cpresler" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+                 <!-- /linkedin -->
+
+                
+                <div class="col-xs-6 col-sm-2 col-md-1 linkedin">
+                    <a href="https://www.linkedin.com/pub/christy-presler/86/148/575" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+                 <!-- /linkedin -->
+
+                
+                <div class="col-xs-6 col-sm-2 col-md-1 behance">
+                    <a href="https://www.behance.net/cnpresler" target="_blank"><i class="fa fa-behance"></i></a>
+                </div>
+                 <!-- /behance -->
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form id="contact-me" class="row" action="">
+                        <input type="hidden" name="_next" value="http://christypresler.com/thanks/" />
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="text" name="_format" value="plain" style="display:none" />
+
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="col-xs-12">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="_replyto" id="email" placeholder="Email" class="col-xs-12">
+                        <label for="topic" class="sr-only">Topic</label>
+                        <input type="text" name="_subject" id="topic" placeholder="Topic" class="col-xs-12"/>
+                        <label for="msg" class="sr-only">Description</label>
+                        <textarea id="msg" rows="10" cols="40" name="message" placeholder="Description"
+                                  class="col-xs-12"></textarea>
+                        <input type="submit" value="SEND" class="col-xs-12 btn btn-primary">
+                    </form>
+                    <div id="thanks">
+                        <h3>Thank you for contacting me!</h3>
+                        <p>I look forward to getting in touch with you as soon as I can.</p>
+                    </div>
+                    <div id="form-error"></div>
+                </div>
+            </div>
+            <p class="copy">&copy; Christy Presler 2016</p>
+        </div>
+    </div> <!-- /.container -->
+</footer>
+
+<!-- Scripts -->
+<script  async src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script  async src="/assets/js/vendor/bootstrap.min.js"></script>
+<script async src="/assets/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-45960105-1','auto');ga('send','pageview');
+</script>
+
+  </body>
+
+</html>
