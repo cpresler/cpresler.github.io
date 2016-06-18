@@ -11,7 +11,7 @@ email: hello@christypresler.com
 description: > # this means to ignore newlines until "baseurl:"
   Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://christypresler.com" # the base hostname & protocol for your site
+url: "https://cpresler.github.io/" # the base hostname & protocol for your site
 blog_img_url: "/assets/images/blog/"
 twitter_username: "@cnpresler"
 github_username:  "cpresler"
