@@ -28,7 +28,17 @@ permalink: blog/:year/:title/
 
 # Collections
 collections:
-- history
-- resume_sections
-- portfolio_web
-- portfolio_design
+  portfolio_web:
+    output: true
+    permalink: /web-portfolio/:path/
+    layout: portfolio
+  history:
+    output: false
+  resume_sections:
+    output: false
+  portfolio_design:
+    output: true
+    permalink: /design-portfolio/:path/
+    defaults:
+      values:
+        layout: portfolio

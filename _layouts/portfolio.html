@@ -1,33 +1,32 @@
 ---
 layout: default
 ---
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-
-        <div id="{{ page.shortName }}" class="col-lg-6 project-section">
-            <div class="close-details"><i class="fa fa-close"></i></div>
+<article id="web-projects" class="col-lg-12 page" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="container">
+        <div id="{{ page.shortName }}" class="row project-section active">
+            <h1 class="page-title">{{ page.title }}</h1>
             <div class="row">
-                <div class="project">
-                    <h4 class="col-lg-12 col-md-6">{{ page.title }}</h4>
-                    <div class="col-lg-12 col-md-6">
+                <div class="project col-md-6">
+                    <div class="">
+                        {% if page.image1-border %}
+                        <img src="{{ site.url}}/assets/images/projects/{{ page.image1 }}" alt="{{ page.title }}" class="border"/>
+                        {% else %}
                         <img src="{{ site.url}}/assets/images/projects/{{ page.image1 }}" alt="{{ page.title }}"/>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="details summary col-lg-6">
+                <div class="details summary col-md-6">
                     <p>{{ page.description }}</p>
+                    {%if page.projecturl %}
                     <a href="{{ page.projecturl }}" class="btn btn-info" target="_blank">Visit Page</a>
+                    {% endif %}
                 </div>
             </div>
-            <div class="row">
-                {{ content }}
+            <div id="project-content">
+                <div class="row">
+                    {{ page.content }}
+                </div>
             </div>
         </div>
     </div>
-
 </article>
