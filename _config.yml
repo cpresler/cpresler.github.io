@@ -31,7 +31,6 @@ collections:
   portfolio_web:
     output: true
     permalink: /web-portfolio/:path/
-    layout: portfolio
   history:
     output: false
   resume_sections:
@@ -39,6 +38,3 @@ collections:
   portfolio_design:
     output: true
     permalink: /design-portfolio/:path/
-    defaults:
-      values:
-        layout: portfolio

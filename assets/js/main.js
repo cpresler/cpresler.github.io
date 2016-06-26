@@ -30,23 +30,64 @@ function navScroll(el) {
 //     }
 // }
 
+var getDetails = {
+    makeUrl: function(sectID) {
+        var idString = sectID.substr(1);
+            //console.log(idString);
+        if( $(sectID).hasClass('web')) {
+            getDetails.url = "/web-portfolio/" + idString + "/index.html";
+        } else if($(sectID).hasClass('design')) {
+            getDetails.url = "/design-portfolio/" + idString + "/index.html";
+        } else {
+            console.log('Error: no class defined');
+            return false;
+        }
+        return true;
+    },
+    loadDetails: function(projId, destination, url, container) {
+        var request = url + " " + container + " > *";
+            //console.log("request string: " + request);
+        $(destination).load(request, function(response, status, xhr) {
+            if(status == 'error') {
+                console.log( 'error: ' + xhr.status + " " + xhr.statusText );
+            } else {
+                getDetails.show(projId);
+            }
+        });
+    },
+    show: function(projId) {
+        var section = $(projId),
+            project = section.find('.project');
+        if(section.hasClass('active')) {
+            $(section).removeClass('active');
+            $(project).removeClass('col-lg-6 col-xs-12');
+                //console.log('closing');
+        } else {
+            $(section).addClass('active');
+            $(project).addClass('col-lg-6 col-xs-12');
+                //console.log('opening');
+        }
+        //Scroll to top of project section
+        scrollToID(projId, 500, 75);
+    }
+};
+
 function details(el) {
     var section = $(el).closest('.project-section'),
         project = $(section).find('.project'),
-        projId = '#' + $(section).attr('id');
-
-    //console.log("project id = " + projId);
-    if(section.hasClass('active')) {
-        $(section).removeClass('active');
-        $(project).removeClass('col-lg-6 col-xs-12');
-        //console.log('closing');
+        projId = '#' + $(section).attr('id'),
+        detailsCont = $(section).find('.full-content');
+        //console.log("project id = " + projId);
+    if(detailsCont.html() == '') {
+        if(getDetails.makeUrl(projId)) {
+            getDetails.loadDetails(projId, detailsCont, getDetails.url, '#project-content');
+        } else {
+            console.log('error making the url');
+        }
     } else {
-        $(section).addClass('active');
-        $(project).addClass('col-lg-6 col-xs-12');
-        //console.log('opening');
+            //console.log('direct to close');
+        getDetails.show(section, project, projId);
     }
-    //Scroll to top of project section
-    scrollToID(projId, 500, 75);
 }
 
 function goToContact() {

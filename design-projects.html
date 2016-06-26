@@ -10,15 +10,17 @@ nav: main
 
 {% assign projects = site.portfolio_design | sort:"weight" | reverse %}
 {% for project in projects %}
-<div id="{{ project.shortName }}" class="col-lg-6 project-section">
+<div id="{{ project.shortName }}" class="col-lg-6 project-section design">
     <div class="close-details"><i class="fa fa-close"></i></div>
     <div class="row">
+        <noscript><a href="/design-portfolio/{{ project.shortName}}"></noscript>
         <div class="project">
             <h4 class="col-lg-12 col-md-6">{{ project.title }}</h4>
             <div class="col-lg-12 col-md-6">
                 <img src="{{ site.url}}/assets/images/projects/{{ project.image1 }}" alt="{{ project.title }}" class="border"/>
             </div>
         </div>
+        <noscript></a></noscript>
         <div class="details summary col-lg-6">
             <h5>Services Rendered:</h5>
             <p>{{ project.description }}</p>
@@ -27,8 +29,6 @@ nav: main
             {% endif %}
         </div>
     </div>
-    <div class="row">
-        {{ project.content }}
-    </div>
+    <div class="full-content"></div>
 </div>
 {% endfor %}
