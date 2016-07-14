@@ -399,11 +399,12 @@ section, article {
         margin-bottom:30px;
         cursor:pointer;
         background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
       }
       .border {
         border:2px solid $gray-light;
         border-radius:4px;
-        margin-bottom:15px;
       }
       .details {
         display:none;
