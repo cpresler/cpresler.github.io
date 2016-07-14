@@ -22,6 +22,8 @@ behance_username: "cnpresler"
 markdown: kramdown
 destination: _deploy
 host: localhost
+sass:
+  style: compressed
 
 # Output
 permalink: blog/:year/:title/
