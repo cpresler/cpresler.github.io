@@ -13,7 +13,7 @@ weight: 5
                 <p>{{ story.timeframe }}</p>
             </div>
             <div class="col-md-4">
-                {%if forloop.first == true or forloop.index == 2%}  {%comment%}reflect both my current jobs, if I revert back to one, remove check for 2nd index{%endcomment%}
+                {%if forloop.first == true %}
                 <h4>What I do:</h4>
                 {% else %}
                 <h4>What I did:</h4>
