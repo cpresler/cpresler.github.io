@@ -1,0 +1,45 @@
+// Declare Variables
+var current, slide;
+var rotate = function(direction) {
+	current = $('.slide.active');
+	console.log('current: ' + current);
+	var position = parseInt($('.slideReel').css('left'), 10);
+	console.log('position: ' + position);
+
+	if(direction === 'next') {
+		console.log('current next: ' + current.attr('id'));
+		slide = current.next();
+		console.log('slide = ' + slide.attr('id'));
+		if(slide.attr('id')) {
+			position = position - 300 + 'px';
+			console.log('position set' + position);
+			$('.slideReel').animate({'left':position}, 300);	
+		} else {
+			slide = $('.slide:first');
+			position = 0;
+			$('.slideReel').css({'left':position + 'px'});	 
+		}
+		$(current).removeClass('active');
+		$(slide).addClass('active');
+	} else if(direction === 'prev') {
+		console.log('current prev: ' + current.attr('id'));
+		slide = current.prev();
+		console.log('slide = ' + slide.attr('id'));
+		if(slide.attr('id')) {
+			position = position + 300 + 'px';
+			console.log('position set' + position);
+			$('.slideReel').animate({'left':position}, 300);	
+		} else {
+			slide = $('.slide:last');
+			console.log('prev else slide' + slide.attr('id'));
+			position = slide.width - 1200;
+			$('.slideReel').css({'left':position + 'px'});	 
+		}
+		$(current).removeClass('active');
+		$(slide).addClass('active');
+	}
+}
+
+$('document').ready(function() {
+	$('.slide:first').addClass('active');
+});

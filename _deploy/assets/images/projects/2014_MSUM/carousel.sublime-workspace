@@ -1,0 +1,843 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"current",
+				"current_num"
+			],
+			[
+				"carou",
+				"carouselHeight"
+			],
+			[
+				"slide",
+				"slide_num"
+			],
+			[
+				"next",
+				"next_num"
+			],
+			[
+				"paging",
+				"paging-active"
+			],
+			[
+				"curre",
+				"current_num"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"page",
+				"page_headers"
+			],
+			[
+				"ite",
+				"item-title"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bread",
+				"breadcrumbsBlock"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"right",
+				"right-sidebar"
+			],
+			[
+				"post",
+				"post_title"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"footer",
+				"footer_links"
+			],
+			[
+				"col",
+				"col-md-8"
+			],
+			[
+				"the",
+				"the_post"
+			],
+			[
+				"the_post",
+				"the_post_thumbnail"
+			],
+			[
+				"site",
+				"site_title"
+			],
+			[
+				"btn",
+				"btn-wht"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"nav",
+				"navWrapper"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"h",
+				"head	Tag"
+			],
+			[
+				"proj",
+				"project-2"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"resume",
+				"resume-map"
+			],
+			[
+				"project",
+				"project-map"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pop",
+				"popover-content"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"hover",
+				"hoverComment"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"pr",
+				"project-2"
+			],
+			[
+				"projec",
+				"project-1"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"fir",
+				"first-of-type"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"none",
+				"none"
+			],
+			[
+				"span",
+				"span_2_of_3"
+			],
+			[
+				"prev",
+				"prev"
+			],
+			[
+				"error",
+				"error_message"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"size",
+				"sizes"
+			],
+			[
+				"p",
+				"product"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"emai",
+				"email_body"
+			],
+			[
+				"em",
+				"email_body"
+			],
+			[
+				"wp_rese",
+				"wp_reset_query"
+			],
+			[
+				"train",
+				"train"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n<title>jQuery, the most used JavaScript Library</title>\n<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"carousel.css\">\n</head>\n<body>\n<h1>jQuery, the web's most used JavaScript Library</h1>\n<div class=\"carouselContainer\">\n  \n  <a id=\"prev\" class=\"aNav\" href=\"javascript:rotate('prev');\"><i></i></a>\n\n  <div class=\"carouselWindow\">\n    <div class=\"slideReel\">\n       \n      <div class=\"slide\">\n        <h2>What is a JavaScript Library?</h2>\n        <p class=\"hero\">A JavaScript library is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications, especially for AJAX and other web-centric technologies.</p>\n        <p>-- Wikipedia</p>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>Why would I use jQuery? (or any other JavaScript Library)</h2>\n        <div class=\"row\">\n          <div class=\"col-5\">\n            <h3>Pro's</h3>\n            <ul>\n              <li>Quicker development</li>\n              <li>Easier cross-browser compatability</li>\n              <li>Easier DOM Element selection</li>\n              <li>Greater structure helpful for beginners</li>\n            </ul>\n          </div>\n          <div class=\"col-5\">\n            <h3>Con's</h3>\n            <ul>\n              <li>Increases page load time</li>\n              <li>Adds to site \"bloat\"</li>\n              <li>Predefined tools can be a hinderence</li>\n            </ul>\n          </div>\n        </div>\n        <div class=\"row\">\n          <h3>So should I use jQuery for my project?</h3>\n          <p>It depends, consider the needs of your project, weigh the pros and cons, and you'll have your answer</p>\n        </div>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>Implementing jQuery:</h2>\n        <h3>Externally Hosted</h3>\n        <p><strong>Advantage:</strong> Easy implementation. Set it and forget it.</p>\n        <pre>\n          <code class=\"prettyprint\">\n            &lt;script src=\"http://code.jquery.com/jquery-1.11.0.min.js\"&gt;&lt;/script&gt;\n          </code>\n        </pre>\n        <p>Place that code snippet above the closing body tag of your page. (It needs to be before any code that uses jQuery or that code will break.)</p>\n\n        <h3>Internally Hosted</h3>\n        <p><strong>Advantage:</strong> Can be incorporated into your master script file to take advantage of caching, and you keep your jQuery version static</p>\n        <p>Download files from: <a href=\"http://jquery.com/download/\">jquery.com</a></p>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Syntax</h2>\n        <h3>Selecting a DOM element with jQuery:</h3>\n        <pre>\n          <code>\n            $('css-selector-here')\n          </code>\n        </pre>\n        <p>A big advantage of jQuery is how easy it makes selecting DOM elements</p>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Syntax</h2>\n        <h3>Make things happen once the page has loaded</h3>\n\n        <p>In \"vanilla\" JavaScript:</p>\n\n        <pre>\n          <code>\n            window.onload = function() {\n              /* stuff you want to happen here */\n            };\n          </code>\n        </pre>\n\n        <p>To do this in jQuery:</p>\n        <pre>\n          <code>\n            $('document').ready(function() {\n\n              /*stuff you want to happen here*/\n\n            });\n          </code>\n        </pre>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.addClass()</h3>\n        <p>.addClass() does exactly what it sounds like. It adds the specified class to the selected element.</p>\n\n        <pre>\n          <code>\n            $('.slide').addClass('active');\n          </code>\n        </pre>\n        <p>You can add multiple classes at the same time, and classes containing variables.</p>\n        <a class=\"btn\" href=\"http://api.jquery.com/addClass/\">More info</a>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.removeClass()</h3>\n        <p>.removeClass() is the exact opposite of .addClass(). It removes the specified class from the selected element.</p>\n        <pre>\n          <code>\n            $('.slide').removeClass('active');\n          </code>\n        </pre>\n        <p>With these two methods we can selectively add and take away classes containing any kind of css styles we want. We'll be using the 'active' css class to keep track of what slide we are on for our carousel.</p>\n        <a class=\"btn\" href=\"http://api.jquery.com/removeClass/\">More info</a>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.css()</h3>\n        <p><strong>.css()</strong>allows us to apply any css styles directly to an element. The syntax for this one is a bit more complex because it can be used in several different ways:</p>\n        <ul>\n          <li>To retrieve the value of a style, or styles:\n            <pre>\n              <code>\n                $('.slide').css('background-color');\n              </code>\n            </pre>\n          </li>\n          <li>To apply and set styles:\n            <pre>\n              <code>\n                $('.slide').css({'background-color': '#f1f1f1', 'border-radius': '5px'});\n              </code>\n            </pre>\n          </li>\n          <li>And others...</li>\n        <a class=\"btn\" href=\"http://api.jquery.com/css/\">More info</a>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.next()</h3>\n        <p><strong>.next()</strong> retrieves the next matching sibling of the element selected. It also accepts a selector, and will find the next sibling that matches that selector. Very useful for down jumping through elements in the DOM</p>\n        <pre>\n          <code>\n            $('.slide').next();\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/next/\">More info</a>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.prev()</h3>\n        <p><strong>.prev()</strong> is the opposite of next, in that it moves up the DOM. It retrieves the sibling before the element in the DOM.</p>\n        <pre>\n          <code>\n            $('.slide').prev();\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/prev/\">More info</a>\n      </div>\n      <!-- /slide -->\n       \n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.animate()</h3>\n        <p><strong>.animate()</strong> creates transitions between css style changes. It allows you to set the styles you are changing to, the time duration of the change(in milliseconds), and even specify a function to happen at the end of the animation</p>\n        <pre>\n          <code>\n            $('.slide').animate({opacity: 0.25}, 5000, function() { console.log('done animating') });\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/animate/\">More info</a>\n      </div>\n      <!-- /slide -->\n\n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.length</h3>\n        <p><strong>.length</strong> is a method that doesn't accept any parameters. It simply measures the length or number of a collection. You can take the length of strings to find the number of letters, the length of an array to find the number of items, etc.</p>\n        <pre>\n          <code>\n            $('.slide').length;\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/length/\">More info</a>\n      </div>\n      <!-- /slide -->\n\n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.each()</h3>\n        <p><strong>.each()</strong> creates a loop that loops through each item selected. Generally you see this written with a function to be applied to each item.</p>\n        <pre>\n          <code>\n            $('.slide').each(function(index){\n              console.log('slide' + index);\n            });\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/each/\">More info</a>\n      </div>\n      <!-- /slide -->\n\n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.attr()</h3>\n        <p><strong>.attr()</strong> allows you to capture, set, or apply attributes and values to DOM elements.</p>\n        <pre>\n          <code>\n            $('.slide').attr('id', 'soap');\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/attr/\">More info</a>\n      </div>\n      <!-- /slide -->\n\n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>.append()</h3>\n        <p><strong>.append()</strong> takes the code you put between the () and adds it inside of the DOM element selected. Adding each additional element after the one before. (.prepend(), adds in the opposite order)</p>\n        <pre>\n          <code>\n            $('.slide').append('&lt;li&gt;Additional list item&lt;/li&gt;');\n          </code>\n        </pre>\n        <a class=\"btn\" href=\"http://api.jquery.com/append/\">More info</a>\n      </div>\n      <!-- /slide -->\n\n      <div class=\"slide\">\n        <h2>jQuery Methods</h2>\n        <h3>And many others<h3>\n        <p>There are lots of useful methods in the jQuery Library. I've shown you a few we'll use for this project, but going through and trying each one out to see what it does is a great way to learn.</p>\n        <a class=\"btn\" href=\"http://api.jquery.com/\">Check out api.jquery.com</a>\n      </div>\n      <!-- /slide -->\n  	</div>\n	</div>\n\n  <a id=\"next\" class=\"aNav\" href=\"javascript:rotate('next');\"><i></i></a>\n  \n  <div class=\"pagingBar\">	  \n	  <div class=\"status\"></div>\n	</div>\n\n</div>\n<script src=\"http://code.jquery.com/jquery-1.11.0.min.js\"></script>\n<script type=\"text/javascript\" src=\"carousel.js\"></script>\n<!-- <script src=\"https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst\"></script> -->\n</body>\n</html>",
+			"file": "carousel.html",
+			"file_size": 10856,
+			"file_write_time": 130588526690368335,
+			"settings":
+			{
+				"buffer_size": 10202,
+				"line_ending": "Windows",
+				"name": "<!DOCTYPE html>"
+			}
+		},
+		{
+			"file": "JQueryForBeginners/Web/Style/StyleSheet.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "carousel.css",
+			"settings":
+			{
+				"buffer_size": 2858,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "JQueryForBeginners/Web/CarouselAdvance.htm",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "carousel.js",
+			"settings":
+			{
+				"buffer_size": 3352,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.js",
+			"settings":
+			{
+				"buffer_size": 3456,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 415.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Christy/Documents/passes.txt",
+		"/C/Users/Christy/Web Design/keys.txt",
+		"/C/Users/Christy/Web Design/scrollTo/jquery.scrollTo-1.4.11/jquery.scrollTo.js",
+		"/C/Users/Christy/Web Design/My site/theme/scroll/_js/jquery.cycle2.js",
+		"/C/Users/Christy/Web Design/My site/theme/scroll/front-page.php",
+		"/C/Users/Christy/Downloads/Download (1).txt",
+		"/C/Users/Christy/Downloads/Download.txt",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/search_group.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/search.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/common-html5/thankyou.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/listing_0.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/feed_page_0.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/category_0.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/contact_us.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/common-html5/home.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/wcp-design-first-look.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/css/default.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp-html5/css/fontello.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/common-html5/contact_us.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v32016/css/default_modified.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v32016/css/default.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp/css/default.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp/home.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp/css/default_modified.css",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp - development/home.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/vwcp - development/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/Important Info - West Coast Paracord.txt",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v32023/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v32028/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v40001/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v40006/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v40012/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v40021/frame.html",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/3dcart theme sources/v32016/frame.html",
+		"/C/Users/Christy/Design Resources/Font Files/fonts/RapScript/RapSript_OTF/FreeLicense.txt",
+		"/C/Users/Christy/Web Design/Projects/West Coast Paracord - IMS/Important Info",
+		"/C/Users/Christy/Web Design/Projects/Life Church/Life Church Important Info.txt",
+		"/C/Users/Christy/Web Design/Projects/Life Church/Quote.txt",
+		"/C/wamp/www/Concrete-Test/blocks/page_list/templates/blog_index_sermon.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/lifechurch.css",
+		"/C/wamp/www/Concrete-Test/blocks/page_list/templates/sermon_index.php",
+		"/C/Users/Christy/Web Design/git notes",
+		"/C/Users/Christy/Web Design/test.scss",
+		"/C/Users/Christy/Web Design/test.css",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/elements/header.php",
+		"/C/Users/Christy/Graphic Design/Projects/Sojourn/Quote for cards and brochure.txt",
+		"/C/Users/Christy/Web Design/My site/my site info.txt",
+		"/C/Users/Christy/Web Design/Projects/Life Church/.htaccess",
+		"/C/wamp/www/wordpress/wp-content/themes/scroll/style.css",
+		"/C/wamp/www/wordpress/wp-content/themes/scroll/front-page.php",
+		"/C/Users/Christy/Web Design/Projects/Life Church/site.php",
+		"/C/wamp/www/Concrete-Test/config/site.php",
+		"/C/Users/Christy/Web Design/Projects/Life Church/www/site.php",
+		"/C/Users/Christy/Web Design/Projects/testing info.txt",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/blog_index.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/blog_entry.php",
+		"/C/Users/Christy/Web Design/My site/all site info.txt",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/style.css",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/footer.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/header.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/home.php",
+		"/C/wamp/www/Concrete-Test/concrete/tools/page_controls_menu_js.php",
+		"/C/Users/Christy/Web Design/Projects/Life Church/new here.txt",
+		"/C/Users/Christy/Web Design/Projects/Life Church/about.txt",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/left_sidebar.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/right_sidebar.php",
+		"/C/Users/Christy/Web Design/Projects/Life Church/lifechurchfargo_net backup.xml",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/elements/footer.php",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/elements/header.php",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/full.php",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/default.php",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/view.php",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/blog_entry.php",
+		"/C/wamp/www/Concrete-Test/config/site_install_user.php",
+		"/C/wamp/www/Concrete-Test/concrete/core/helpers/html.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/elements/footer.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/view.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/full.php",
+		"/C/wamp/www/Concrete-Test/page_types/blog_entry.php",
+		"/C/Users/Christy/Web Design/Projects/Life Church/Quote",
+		"/C/Users/Christy/Web Design/Projects/Life Church/Life Church Important Info",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/default.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/blog-entry.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurchUpgrade/description.txt",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/lifechurch.css",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/elements/footer.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/elements/header.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/view.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/blog-entry.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/home.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/full.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/default.php",
+		"/C/wamp/www/Concrete-Test/themes/LifeChurch/description.txt",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/description.txt",
+		"/C/wamp/www/Concrete-Test/concrete/themes/greek_yogurt/elements/blog_header.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/lifechurchfargo.net/themes/LifeChurch/lifechurch.css",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/lifechurchfargo.net/themes/LifeChurch/home.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/lifechurchfargo.net/themes/LifeChurch/full.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/lifechurchfargo.net/themes/LifeChurch/default.php",
+		"/C/Users/Christy/Web Design/mysqlkeys",
+		"/C/Users/Christy/Graphic Design/Projects/SVBA/print/Quotes.txt",
+		"/C/Users/Christy/Web Design/Projects/SVBA/landing/SVBA Important Info.txt",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/js/map.js",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/.alias",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/.bash_profile",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/.bashrc",
+		"/C/Users/Christy/Web Design/wamp/www/dev/lifechurch/.cshrc",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/portfolio_footer-blog.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/portfolio_header-blog.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/portfolio_index.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/portfolio_page.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/responsive-nav-styles.css",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_combined.js",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_cp-process.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_footer.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_header.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_index.php",
+		"/C/Users/Christy/Documents/jobs/2014/swansons- kellyIT/code samples/resume-site_style.css",
+		"/C/Users/Christy/Graphic Design/Projects/Sojourn/Welcome cards and brochure project description",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/index.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/functions.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/category-events.php",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/events.html",
+		"/C/Users/Christy/Web Design/Projects/SVBA/landing/Church info.txt",
+		"/C/Users/Christy/Web Design/wamp/www/dev/svba/css/Color Palette by Color Scheme Designer",
+		"/C/Users/Christy/Web Design/Projects/SVBA/print/Half Sheet flyers job description.txt"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<!-- new slide -->",
+			");\n",
+			"swap",
+			"swapStatus",
+			"swapSlides",
+			"999",
+			"slides",
+			"next",
+			"paging",
+			"paging-active",
+			"activate",
+			"active",
+			"product-item",
+			"item",
+			"first",
+			"d12e02",
+			"b00312",
+			"#home",
+			"#home ",
+			"b00312",
+			"header",
+			"0d0d0d",
+			"333",
+			"111",
+			"header",
+			"script",
+			"mainContent",
+			"templates",
+			"assets",
+			"body",
+			"nav",
+			"body",
+			"head",
+			"h2",
+			"body",
+			"0202af",
+			"00f",
+			"nav",
+			"body",
+			"logo",
+			"header",
+			"-->\n",
+			"header",
+			"820c17",
+			"830c17",
+			"830c16",
+			"e30317",
+			"nav",
+			"navbar-right",
+			"../",
+			"-php",
+			"html",
+			"#0061FC",
+			"#0840b1",
+			"#0969a2",
+			"#0991fa",
+			"lg",
+			"@media",
+			"screen						<div class=\"row\">\n								<div class=\"col-lg-11\">\n@media",
+			"screen",
+			"small",
+			"full",
+			"0.7",
+			"div",
+			"area",
+			"FFF",
+			"bricks",
+			"get_adjacent_post",
+			"previous_post",
+			"oswald",
+			"fa-arrow-left",
+			"illustration"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"",
+			"swap",
+			"slide",
+			"status",
+			"onPage",
+			"0202AF",
+			"d12e02",
+			"0202AF",
+			"00f",
+			"0d0d0d",
+			"assets/templates",
+			"http://www.westcoastparacord.com",
+			"http://www.westcoastparacord.com/assets",
+			"111",
+			"333",
+			"0202AF",
+			"00f"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "carousel.html",
+					"settings":
+					{
+						"buffer_size": 10202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1116,
+								1116
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!DOCTYPE html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 436.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "JQueryForBeginners/Web/Style/StyleSheet.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "carousel.css",
+					"settings":
+					{
+						"buffer_size": 2858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								678,
+								678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 169.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "JQueryForBeginners/Web/CarouselAdvance.htm",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1853.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "carousel.js",
+					"settings":
+					{
+						"buffer_size": 3352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2662,
+								2662
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1202.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test.js",
+					"settings":
+					{
+						"buffer_size": 3456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 156.0,
+	"status_bar_visible": true
+}

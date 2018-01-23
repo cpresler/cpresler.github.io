@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="Shortcut Icon" href="http://christypresler.com/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" href="http://christypresler.com/assets/images/apple-touch-icon.png">
+  <link rel="Shortcut Icon" href="http://localhost:4000/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="http://localhost:4000/assets/images/apple-touch-icon.png">
   <title>Christy Presler</title>
   <meta name="description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 ">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- OG tags -->
+    <meta property="og:title" content="Christy Presler" />
+    <meta property="og:description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
+" />
+    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/homepage-screenshot.png" />
+  <!-- /OG tags -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://christypresler.com//">
-  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://christypresler.com//feed.xml">
+  <link rel="canonical" href="http://localhost:4000//">
+  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://localhost:4000//feed.xml">
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
@@ -34,6 +40,8 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           
+          
+            
           
             
           
@@ -104,13 +112,13 @@
   <section id="top" class="jumbotron header">
     <div class="container">
       <div class="row">
-        <img id="hero-pic" src="http://christypresler.com/assets/images/me_color_lg.jpg" alt="Christy Presler" class="col-sm-4"/>
+        <img id="hero-pic" src="http://localhost:4000/assets/images/me_color_lg.jpg" alt="Christy Presler" class="col-sm-4"/>
         <div class="col-sm-8">
           <h1 class="hero-text">Hello, I'm Christy.<br/>I design and build websites.</h1>
           <p class="lead">I value efficient and effective communication and believe that good design delivers great
             value.</p>
           <div class="button-group">
-            <a href="http://christypresler.com/about/" class="btn btn-primary btn-lg">More About Me</a>
+            <a href="http://localhost:4000/about/" class="btn btn-primary btn-lg">More About Me</a>
             <a href="#projects" class="btn btn-primary btn-lg work">My Work</a>
             <a href="#contact" class="btn btn-primary btn-lg contact">Contact Me</a>
           </div>
@@ -132,56 +140,42 @@
       <div class="row">
         
         
-        <div id="wcny-donation" class="col-lg-6 project-section">
+        <div id="wcny-donation" class="col-lg-6 project-section web">
           <div class="close-details"><i class="fa fa-close"></i></div>
           <div class="row">
+            <noscript><a href="/web-portfolio/wcny-donation"></noscript>
             <div class="project">
               <h4 class="col-lg-12 col-md-6">WCNY Donation Form</h4>
               <div class="col-lg-12 col-md-6">
                 
-                <img src="http://christypresler.com/assets/images/projects/wcny-donation/wcny-donation-display.png" alt="WCNY Donation Form"/>
+                <img src="http://localhost:4000/assets/images/projects/wcny-donation/wcny-donation-display.png" alt="WCNY Donation Form"/>
                 
               </div>
             </div>
+            <noscript></a></noscript>
             <div class="details summary col-lg-6">
               <p>I redesigned and rebuilt WCNY's primary donation form to improve usability and expand functionality to include new member benefit options.</p>
               
-              <a href="https://www.wcny.org/donate/" class="btn btn-info" target="_blank">Visit Page</a>
+              <a href="https://www.wcny.org/support-wcny/membership/" class="btn btn-info" target="_blank">Visit Page</a>
               
             </div>
           </div>
-          <div class="row">
-            <div class="details col-lg-6">
-    <p>The default form provides suggests giving levels, and dynamically updates your level based on your gift, while also providing you the option to choose additional member benefits at certain levels.</p>
-    <p>For members, I created a login option by incorporating a member data API. This allows the form to return your current giving level, and adjust the amounts required to upgrade to each level based on your current gift. It also makes completing the form simpler by auto filling the basic billing information.</p>
-    <p>This project created some very interesting challenges because this payment gateway is hosted by BluePay for security reasons, and as a result I had no option of generating any functionality server-side. Also with so much logic hinging on my calculations, I had to be very careful that my Javascript returned appropriately rounded and accurate numbers.</p>
-    <p>In addition to the challenges posed by no server access, BluePay hosted forms only accept a specific set of data points, which do not generally include things like extra benefit choices, or specified giving levels. Therefore, I had to make sure that all data submitted by the form was consolidated down into the acceptable data points in order to avoid an error. I managed this by dynamically updating the values of those data elements based on user choices and then disabling all other data inputs before submitting the form.</p>
-</div>
-<div class="details col-lg-6">
-    <img src="../assets/images/projects/wcny-donation/join-new-platinum.png" alt="WCNY Donation Form New Members"/>
-</div>
-</div>
-<div class="row">
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-donation/member-login-form.png" alt="WCNY Donation Form Member Login"/>
-    </div>
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-donation/member-logged-in.png" alt="WCNY Donation Form Logged in Member"/>
-    </div>
-          </div>
+          <div class="full-content"></div>
         </div>
         
-        <div id="wcny-code-lookup" class="col-lg-6 project-section">
+        <div id="wcny-code-lookup" class="col-lg-6 project-section web">
           <div class="close-details"><i class="fa fa-close"></i></div>
           <div class="row">
+            <noscript><a href="/web-portfolio/wcny-code-lookup"></noscript>
             <div class="project">
               <h4 class="col-lg-12 col-md-6">WCNY Activation Code Lookup</h4>
               <div class="col-lg-12 col-md-6">
                 
-                <img src="http://christypresler.com/assets/images/projects/wcny-code-lookup/wcny-code-lookup-display.png" alt="WCNY Activation Code Lookup"/>
+                <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-lookup-display.png" alt="WCNY Activation Code Lookup"/>
                 
               </div>
             </div>
+            <noscript></a></noscript>
             <div class="details summary col-lg-6">
               <p>I expanded the custom plugin built for WCNY member login to include the ability for members to lookup their activation code without the assistance of member services.</p>
               
@@ -189,38 +183,22 @@
               
             </div>
           </div>
-          <div class="row">
-            <div class="details col-lg-6">
-    <img src="../assets/images/projects/wcny-code-lookup/wcny-code-lookup.png" alt="WCNY Activation Code Lookup"/>
-    <p>Using the same PBS member API, I expanded the functionality to validate a user return the user's activation code if applicable, or further instructions if not.</p>
-</div>
-<div class="details col-lg-6">
-    <img src="../assets/images/projects/wcny-code-lookup/wcny-code-validate.png" alt="WCNY Activation Code Lookup Error"/>
-</div>
-</div>
-<div class="row">
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-code-lookup/wcny-code-activate.png" alt="WCNY Activation Code Lookup Success"/>
-        <p>If the form returns an activation code it generates an automatic activation link to make it simple for the user to continue on to activation.</p>
-        <p>If the user's information repeatedly fails to validate, they are locked from accessing the form as the first layer of security against a script attempting to access member information.</p>
-    </div>
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-code-lookup/wcny-code-limit.png" alt="WCNY Activation Code Lookup Locked"/>
-    </div>
-          </div>
+          <div class="full-content"></div>
         </div>
         
-        <div id="wcny-membersite" class="col-lg-6 project-section">
+        <div id="wcny-membersite" class="col-lg-6 project-section web">
           <div class="close-details"><i class="fa fa-close"></i></div>
           <div class="row">
+            <noscript><a href="/web-portfolio/wcny-membersite"></noscript>
             <div class="project">
               <h4 class="col-lg-12 col-md-6">WCNY MemberSite</h4>
               <div class="col-lg-12 col-md-6">
                 
-                <img src="http://christypresler.com/assets/images/projects/wcny-membersite/wcny-membersite-display.png" alt="WCNY MemberSite"/>
+                <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-membersite-display.png" alt="WCNY MemberSite"/>
                 
               </div>
             </div>
+            <noscript></a></noscript>
             <div class="details summary col-lg-6">
               <p>I collaborated with another developer to build a custom WordPress plugin that leverages OAuth for user authentication and a PBS Membership API for user identification to create a login portal for WCNY Members.</p>
               
@@ -228,39 +206,22 @@
               
             </div>
           </div>
-          <div class="row">
-                <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-membersite/wcny-login-page.png" alt="WCNY Login Page"/>
-        <p>The custom WordPress plugin uses OAuth to allow for social login, as well as single sign-in with PBS apps. Allowing a WCNY Member to login to our website to access a wide variety of PBS content.</p>
-        <p>The plugin also allows for one-time user account activation which aligns the user's digital account with their WCNY membership. The activation page includes the ability to receive activation codes as parameters, enabling auto activation of members who respond to links withing e-communications.</p>
-    </div>
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-membersite/wcny-login-activate.png" alt="WCNY Activation Page"/>
-    </div>
-</div>
-<div class="row">
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-membersite/wcny-login-nav.png" alt="Member Login vs MemberSite"/>
-        <p>Once the user has activated, and logged in, using one of the available options, I incorporated an authenticated check throughout the site. Currently it is being used to direct a user to login, or visit the membersite, but it is built to allow WCNY to expand content for authenticated members across the site in future projects.</p>
-        <p>The MemberSite itself incorporates video, streaming radio, account information, and a variety of member-exclusive resources.</p>
-    </div>
-    <div class="details col-lg-6">
-        <img src="../assets/images/projects/wcny-membersite/wcny-membersite.png" alt="WCNY MemberSite"/>
-    </div>
-          </div>
+          <div class="full-content"></div>
         </div>
         
-        <div id="shp-login" class="col-lg-6 project-section">
+        <div id="shp-login" class="col-lg-6 project-section web">
           <div class="close-details"><i class="fa fa-close"></i></div>
           <div class="row">
+            <noscript><a href="/web-portfolio/shp-login"></noscript>
             <div class="project">
               <h4 class="col-lg-12 col-md-6">Create Account and Login Form</h4>
               <div class="col-lg-12 col-md-6">
                 
-                <img src="http://christypresler.com/assets/images/projects/shp-login/shp-login-display.png" alt="Create Account and Login Form"/>
+                <img src="http://localhost:4000/assets/images/projects/shp-login/shp-login-display.png" alt="Create Account and Login Form"/>
                 
               </div>
             </div>
+            <noscript></a></noscript>
             <div class="details summary col-lg-6">
               <p>I collaborated with a Backend Developer to redesign and consolidate Swanson Health Product's account creation and login process. I took what had been a multi-page complicated gateway and consolidated it into a single multi-use page that is both easier to use and simpler to maintain.</p>
               
@@ -268,27 +229,15 @@
               
             </div>
           </div>
-          <div class="row">
-            <div class="details col-lg-6">
-    <img src="../assets/images/projects/shp-login/shp-login.png" alt="Login Form Optimized for Mobile"/>
-    <p>In redesigning the login section of the page I focused on making the form as simple to use on mobile as 
-        possible. Making the login process simple helped encourage user login.</p>
-</div>
-<div class="details col-lg-6">
-    <img src="../assets/images/projects/shp-login/shp-account-creation.png" alt="Form Providing Feedback"/>
-    <p>Simplifying the account creation process was a key part of this project. Aiding in the simplification process
-    was instant form validation of all data inputs, particularly passwords. Validating passwords as they are entered 
-        helps the user create a compliant password, while encouraging them by tracking their progress.</p>
-</div>
-          </div>
+          <div class="full-content"></div>
         </div>
         
       </div>
     </div>
     <div class="container see-all">
       <div class="button-group">
-        <a href="http://christypresler.com/web-projects/" class="btn-default btn">See All Web Projects</a>
-        <a href="http://christypresler.com/design-projects/" class="btn-default btn">See All Design Projects</a>
+        <a href="http://localhost:4000/web-projects/" class="btn-default btn">See All Web Projects</a>
+        <a href="http://localhost:4000/design-projects/" class="btn-default btn">See All Design Projects</a>
       </div>
     </div>
   </section>
@@ -310,9 +259,21 @@
           
             
             <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-fish/">
+              <a href="http://localhost:4000/blog/2017/common-command-line/">
                 <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/origami-fish-01.jpg"
+                  <img src="http://localhost:4000/assets/images/blog/2017/02/command-line-basics.png"
+                       alt="Command Line Basics">
+                  <h4>Command Line Basics</h4>
+                </div>
+              </a>
+            </li>
+            
+          
+            
+            <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+              <a href="http://localhost:4000/blog/2014/origami-fish/">
+                <div class="post-summary">
+                  <img src="http://localhost:4000/assets/images/blog/2014/03/origami-fish-01.jpg"
                        alt="Origami Fish Icon">
                   <h4>Origami Fish Icon</h4>
                 </div>
@@ -322,23 +283,11 @@
           
             
             <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-giraffe/">
+              <a href="http://localhost:4000/blog/2014/origami-giraffe/">
                 <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/origami-giraffe-01.jpg"
+                  <img src="http://localhost:4000/assets/images/blog/2014/03/origami-giraffe-01.jpg"
                        alt="Origami Giraffe Icon">
                   <h4>Origami Giraffe Icon</h4>
-                </div>
-              </a>
-            </li>
-            
-          
-            
-            <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-hummingbird/">
-                <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/origami-hummingbird-01.jpg"
-                       alt="Origami Hummingbird Icon">
-                  <h4>Origami Hummingbird Icon</h4>
                 </div>
               </a>
             </li>
@@ -349,9 +298,21 @@
           
             
             <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-horse/">
+              <a href="http://localhost:4000/blog/2014/origami-hummingbird/">
                 <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/origami-horse-01.jpg"
+                  <img src="http://localhost:4000/assets/images/blog/2014/03/origami-hummingbird-01.jpg"
+                       alt="Origami Hummingbird Icon">
+                  <h4>Origami Hummingbird Icon</h4>
+                </div>
+              </a>
+            </li>
+            
+          
+            
+            <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+              <a href="http://localhost:4000/blog/2014/origami-horse/">
+                <div class="post-summary">
+                  <img src="http://localhost:4000/assets/images/blog/2014/03/origami-horse-01.jpg"
                        alt="Origami Horse Icon">
                   <h4>Origami Horse Icon</h4>
                 </div>
@@ -361,23 +322,11 @@
           
             
             <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-bat/">
+              <a href="http://localhost:4000/blog/2014/origami-bat/">
                 <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/origami-bat-01.jpg"
+                  <img src="http://localhost:4000/assets/images/blog/2014/03/origami-bat-01.jpg"
                        alt="Origami Bat Icon">
                   <h4>Origami Bat Icon</h4>
-                </div>
-              </a>
-            </li>
-            
-          
-            
-            <li class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-              <a href="http://christypresler.com/blog/2014/origami-swan/">
-                <div class="post-summary">
-                  <img src="http://christypresler.com/assets/images/blog/2014/03/swan-origami-01.jpg"
-                       alt="Origami Swan Icon">
-                  <h4>Origami Swan Icon</h4>
                 </div>
               </a>
             </li>
@@ -393,7 +342,7 @@
 
     <div class="container see-all">
       <div class="button-group">
-        <a href="http://christypresler.com/thoughts/" class="btn-default btn">See All Posts</a>
+        <a href="http://localhost:4000/thoughts/" class="btn-default btn">See All Posts</a>
       </div>
     </div>
   </section>
@@ -437,7 +386,7 @@
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
                     <form id="contact-me" class="row" action="">
-                        <input type="hidden" name="_next" value="http://christypresler.com/thanks/" />
+                        <input type="hidden" name="_next" value="http://localhost:4000/thanks/" />
                         <input type="text" name="_gotcha" style="display:none" />
                         <input type="text" name="_format" value="plain" style="display:none" />
 
@@ -459,7 +408,7 @@
                     <div id="form-error"></div>
                 </div>
             </div>
-            <p class="copy">&copy; Christy Presler 2016</p>
+            <p class="copy">&copy; Christy Presler 2018</p>
         </div>
     </div> <!-- /.container -->
 </footer>

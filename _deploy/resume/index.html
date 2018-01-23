@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="Shortcut Icon" href="http://christypresler.com/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" href="http://christypresler.com/assets/images/apple-touch-icon.png">
+  <link rel="Shortcut Icon" href="http://localhost:4000/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="http://localhost:4000/assets/images/apple-touch-icon.png">
   <title>Resume</title>
   <meta name="description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 ">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- OG tags -->
+    <meta property="og:title" content="Resume" />
+    <meta property="og:description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
+" />
+    <meta property="og:url" content="http://localhost:4000/resume/" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/homepage-screenshot.png" />
+  <!-- /OG tags -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://christypresler.com//resume/">
-  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://christypresler.com//feed.xml">
+  <link rel="canonical" href="http://localhost:4000//resume/">
+  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://localhost:4000//feed.xml">
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
@@ -34,6 +40,8 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           
+          
+            
           
             
           
@@ -107,7 +115,7 @@
     
         <div class="container">
             <div class="row">
-                <p><img id="hero-pic" src="http://christypresler.com/assets/images/me_color_lg.jpg" alt="Christy Presler" class="col-sm-4" /></p>
+                <p><img id="hero-pic" src="http://localhost:4000/assets/images/me_color_lg.jpg" alt="Christy Presler" class="col-sm-4" /></p>
 <div class="col-sm-8">
     <h1 class="hero-text">Christy is ready to work with you</h1>
 </div>
@@ -121,7 +129,7 @@
     
         <div class="container">
             <div class="row">
-                <p class="lead col-sm-5">Web Developer and Designer</p>
+                <p class="lead col-sm-5">Web Designer and Front-End Developer</p>
 <p class="lead col-sm-7">Passionate About Creative Problem Solving, and User Experience</p>
 
             </div>
@@ -221,12 +229,12 @@
             <div class="project">
                 <h4 class="col-lg-12 col-md-6">WCNY Donation Form</h4>
                 <div class="col-lg-12 col-md-6">
-                    <img src="http://christypresler.com/assets/images/projects/wcny-donation/wcny-donation-display.png" alt="WCNY Donation Form"/>
+                    <img src="http://localhost:4000/assets/images/projects/wcny-donation/wcny-donation-display.png" alt="WCNY Donation Form"/>
                 </div>
             </div>
             <div class="details summary col-lg-6">
                 <p>I redesigned and rebuilt WCNY's primary donation form to improve usability and expand functionality to include new member benefit options.</p>
-                <a href="https://www.wcny.org/donate/" class="btn btn-info" target="_blank">Visit Page</a>
+                <a href="https://www.wcny.org/support-wcny/membership/" class="btn btn-info" target="_blank">Visit Page</a>
             </div>
         </div>
         <div class="row">
@@ -237,15 +245,15 @@
     <p>In addition to the challenges posed by no server access, BluePay hosted forms only accept a specific set of data points, which do not generally include things like extra benefit choices, or specified giving levels. Therefore, I had to make sure that all data submitted by the form was consolidated down into the acceptable data points in order to avoid an error. I managed this by dynamically updating the values of those data elements based on user choices and then disabling all other data inputs before submitting the form.</p>
 </div>
 <div class="details col-lg-6">
-    <img src="../assets/images/projects/{{ page.shortName }}/join-new-platinum.png" alt="WCNY Donation Form New Members"/>
+    <img src="http://localhost:4000/assets/images/projects/wcny-donation/join-new-platinum.png" alt="WCNY Donation Form New Members"/>
 </div>
 </div>
 <div class="row">
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/member-login-form.png" alt="WCNY Donation Form Member Login"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-donation/member-login-form.png" alt="WCNY Donation Form Member Login"/>
     </div>
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/member-logged-in.png" alt="WCNY Donation Form Logged in Member"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-donation/member-logged-in.png" alt="WCNY Donation Form Logged in Member"/>
     </div>
         </div>
     </div>
@@ -256,7 +264,7 @@
             <div class="project">
                 <h4 class="col-lg-12 col-md-6">WCNY Activation Code Lookup</h4>
                 <div class="col-lg-12 col-md-6">
-                    <img src="http://christypresler.com/assets/images/projects/wcny-code-lookup/wcny-code-lookup-display.png" alt="WCNY Activation Code Lookup"/>
+                    <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-lookup-display.png" alt="WCNY Activation Code Lookup"/>
                 </div>
             </div>
             <div class="details summary col-lg-6">
@@ -266,21 +274,21 @@
         </div>
         <div class="row">
             <div class="details col-lg-6">
-    <img src="../assets/images/projects/{{ page.shortName }}/wcny-code-lookup.png" alt="WCNY Activation Code Lookup"/>
+    <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-lookup.png" alt="WCNY Activation Code Lookup"/>
     <p>Using the same PBS member API, I expanded the functionality to validate a user return the user's activation code if applicable, or further instructions if not.</p>
 </div>
 <div class="details col-lg-6">
-    <img src="../assets/images/projects/{{ page.shortName }}/wcny-code-validate.png" alt="WCNY Activation Code Lookup Error"/>
+    <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-validate.png" alt="WCNY Activation Code Lookup Error"/>
 </div>
 </div>
 <div class="row">
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-code-activate.png" alt="WCNY Activation Code Lookup Success"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-activate.png" alt="WCNY Activation Code Lookup Success"/>
         <p>If the form returns an activation code it generates an automatic activation link to make it simple for the user to continue on to activation.</p>
         <p>If the user's information repeatedly fails to validate, they are locked from accessing the form as the first layer of security against a script attempting to access member information.</p>
     </div>
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-code-limit.png" alt="WCNY Activation Code Lookup Locked"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-code-lookup/wcny-code-limit.png" alt="WCNY Activation Code Lookup Locked"/>
     </div>
         </div>
     </div>
@@ -291,7 +299,7 @@
             <div class="project">
                 <h4 class="col-lg-12 col-md-6">WCNY MemberSite</h4>
                 <div class="col-lg-12 col-md-6">
-                    <img src="http://christypresler.com/assets/images/projects/wcny-membersite/wcny-membersite-display.png" alt="WCNY MemberSite"/>
+                    <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-membersite-display.png" alt="WCNY MemberSite"/>
                 </div>
             </div>
             <div class="details summary col-lg-6">
@@ -301,22 +309,22 @@
         </div>
         <div class="row">
                 <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-login-page.png" alt="WCNY Login Page"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-login-page.png" alt="WCNY Login Page"/>
         <p>The custom WordPress plugin uses OAuth to allow for social login, as well as single sign-in with PBS apps. Allowing a WCNY Member to login to our website to access a wide variety of PBS content.</p>
         <p>The plugin also allows for one-time user account activation which aligns the user's digital account with their WCNY membership. The activation page includes the ability to receive activation codes as parameters, enabling auto activation of members who respond to links withing e-communications.</p>
     </div>
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-login-activate.png" alt="WCNY Activation Page"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-login-activate.png" alt="WCNY Activation Page"/>
     </div>
 </div>
 <div class="row">
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-login-nav.png" alt="Member Login vs MemberSite"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-login-nav.png" alt="Member Login vs MemberSite"/>
         <p>Once the user has activated, and logged in, using one of the available options, I incorporated an authenticated check throughout the site. Currently it is being used to direct a user to login, or visit the membersite, but it is built to allow WCNY to expand content for authenticated members across the site in future projects.</p>
         <p>The MemberSite itself incorporates video, streaming radio, account information, and a variety of member-exclusive resources.</p>
     </div>
     <div class="details col-lg-6">
-        <img src="../assets/images/projects/{{ page.shortName }}/wcny-membersite.png" alt="WCNY MemberSite"/>
+        <img src="http://localhost:4000/assets/images/projects/wcny-membersite/wcny-membersite.png" alt="WCNY MemberSite"/>
     </div>
         </div>
     </div>
@@ -327,7 +335,7 @@
             <div class="project">
                 <h4 class="col-lg-12 col-md-6">Create Account and Login Form</h4>
                 <div class="col-lg-12 col-md-6">
-                    <img src="http://christypresler.com/assets/images/projects/shp-login/shp-login-display.png" alt="Create Account and Login Form"/>
+                    <img src="http://localhost:4000/assets/images/projects/shp-login/shp-login-display.png" alt="Create Account and Login Form"/>
                 </div>
             </div>
             <div class="details summary col-lg-6">
@@ -337,12 +345,12 @@
         </div>
         <div class="row">
             <div class="details col-lg-6">
-    <img src="../assets/images/projects/{{ page.shortName }}/shp-login.png" alt="Login Form Optimized for Mobile"/>
+    <img src="http://localhost:4000/assets/images/projects/shp-login/shp-login.png" alt="Login Form Optimized for Mobile"/>
     <p>In redesigning the login section of the page I focused on making the form as simple to use on mobile as 
         possible. Making the login process simple helped encourage user login.</p>
 </div>
 <div class="details col-lg-6">
-    <img src="../assets/images/projects/{{ page.shortName }}/shp-account-creation.png" alt="Form Providing Feedback"/>
+    <img src="http://localhost:4000/assets/images/projects/shp-login/shp-account-creation.png" alt="Form Providing Feedback"/>
     <p>Simplifying the account creation process was a key part of this project. Aiding in the simplification process
     was instant form validation of all data inputs, particularly passwords. Validating passwords as they are entered 
         helps the user create a compliant password, while encouraging them by tracking their progress.</p>
@@ -370,19 +378,61 @@
     <div class="odd">
         <div class="row">
             <div class="col-md-4">
-                <h3>Web Designer/Developer</h3>
-                <p>WCNY Public Media, Syracuse, NY</p>
-                <p>2015-Present</p>
+                <h3>User Experience Designer</h3>
+                <p>Raymour &amp; Flanigan, Liverpool, NY</p>
+                <p>2016-Present</p>
             </div>
             <div class="col-md-4">
                 
                 <h4>What I do:</h4>
                 
-                <p>I build custom plugins and theme elements that integrate with WordPress, and incorporate third party APIs for social login, dynamic content, custom email receipts, and more.</p>
+                <p>Use my knowledge of UX and technical understanding to design user interfaces that maximize ease of use and accessibility. I have also orchestrated replatforming the website's search functionality to greatly improve both the customer experience and site performance.</p>
             </div>
             <div class="col-md-4">
                 <h4>What I learned:</h4>
-                <p>How to effectively use API integrations to draw from third party functionality to increase efficiency and improve user experience. I have also learned that I value the ability to dive deeply into a specific technology and leverage my skills for the benefit of a company.</p>
+                <p>That prioritizing standardization and modularity makes it much easier to collaborate as a team in design as well as development.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="even">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Instructor/Mentor</h3>
+                <p>Startfast Code, Syracuse, NY</p>
+                <p>2016</p>
+            </div>
+            <div class="col-md-4">
+                
+                <h4>What I did:</h4>
+                
+                <p>Mentor students in full stack JavaScript, through pair programming, and discussions on key development topics based on my experiences.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>What I learned:</h4>
+                <p>That I really enjoy teaching. It gives me a great chance to look more closely at topics like AJAX, HTTP/HTTPS, accessibility, and many other important parts of being a developer on a regular basis with students. If everyone walks away learning something it is a good class.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="odd">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Web Designer/Developer</h3>
+                <p>WCNY Public Media, Syracuse, NY</p>
+                <p>2015-2016</p>
+            </div>
+            <div class="col-md-4">
+                
+                <h4>What I did:</h4>
+                
+                <p>I built custom plugins and theme elements that integrated with WordPress, and incorporated third party APIs for social login, dynamic content, custom email receipts, and more.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>What I learned:</h4>
+                <p>How to effectively use API integrations to draw from third party functionality to increase efficiency and improve user experience. I also learned that I value the ability to dive deeply into a specific technology and leverage my knowledge for the benefit of a company.</p>
             </div>
         </div>
     </div>
@@ -587,7 +637,7 @@
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
                     <form id="contact-me" class="row" action="">
-                        <input type="hidden" name="_next" value="http://christypresler.com/thanks/" />
+                        <input type="hidden" name="_next" value="http://localhost:4000/thanks/" />
                         <input type="text" name="_gotcha" style="display:none" />
                         <input type="text" name="_format" value="plain" style="display:none" />
 
@@ -609,7 +659,7 @@
                     <div id="form-error"></div>
                 </div>
             </div>
-            <p class="copy">&copy; Christy Presler 2016</p>
+            <p class="copy">&copy; Christy Presler 2018</p>
         </div>
     </div> <!-- /.container -->
 </footer>

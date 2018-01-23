@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="Shortcut Icon" href="http://christypresler.com/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" href="http://christypresler.com/assets/images/apple-touch-icon.png">
+  <link rel="Shortcut Icon" href="http://localhost:4000/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="http://localhost:4000/assets/images/apple-touch-icon.png">
   <title>About</title>
   <meta name="description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 ">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- OG tags -->
+    <meta property="og:title" content="About" />
+    <meta property="og:description" content="Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
+" />
+    <meta property="og:url" content="http://localhost:4000/about/" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/homepage-screenshot.png" />
+  <!-- /OG tags -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://christypresler.com//about/">
-  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://christypresler.com//feed.xml">
+  <link rel="canonical" href="http://localhost:4000//about/">
+  <link rel="alternate" type="application/rss+xml" title="Christy Presler" href="http://localhost:4000//feed.xml">
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
@@ -34,6 +40,8 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           
+          
+            
           
             
           
@@ -120,7 +128,7 @@
               <section class="col-sm-8 about">
     <div class="row hero">
         <div class="col-sm-4">
-            <img class="hero-pic" src="http://christypresler.com/assets/images/me_bw.png" alt="Christy Presler" />
+            <img class="hero-pic" src="http://localhost:4000/assets/images/me_bw.png" alt="Christy Presler" />
         </div>
         <div class="col-sm-8">
             <p class="lead">
@@ -130,13 +138,16 @@
     </div>
     <div class="row about-txt">
         <p>
-            I specialize in creating custom websites for individuals, small businesses, and non-profits. I enjoy all kinds of design challenges and I'm happy to help you build your brand from the ground up in web and print, or work with you to get your existing brand online to reach a larger audience.
+            I specialize in designing and building enterprise level web applications. I love challenges and enjoy leveraging modularity to create designs and code that scales well.
         </p>
         <p>
-            I earned a Bachelor of Fine Arts from Washington University in St. Louis, where I discovered my love of letterpress, typography, and effective design. This has since grown into my passion for well executed and creative design on the web. I have a passion for helping small businesses succeed and firmly believe that a strong brand identity and strategic web presence is an important part of growing any business. I love using creative critical thinking to tackle tough problems and enable people to pursue their passions.
+            I'm a user experience nerd, who likes reading about accessibility and user centered design. I'm equally passionate about design and technology, which means I'm just as happy to discuss typography and color theory as third-party API integrations, or the latest JavaScript framework. Collaborating with teams where I get to do both on a regular basis is great!
         </p>
         <p>
-            I'm also an outdoor enthusiast, an Appalachian Trail Thru-Hiker, an avid tea drinker, a book lover, and appreciator of pet rabbits. These days, when not at my computer working on a design or coding a project, I'm often found curled up with a book or working on a woodblock print.
+            I love to learn. I earned a Bachelor of Fine Arts from Washington University in St. Louis, where I discovered my love of letterpress, typography, and effective design. After completing my degree this grew into a passion for well executed and creative design on the web. Designing for the web lead to learning to build my own designs. I found the resources I needed to learn to code, and discovered how awesome the creative problem solving process of development is. In my opinion, the best projects are the kind that challenge me to draw on new tools and combine them with a little, or a lot of, ingenuity to create a solution that solves a real problem.
+        </p>
+        <p>
+            I'm also an outdoor enthusiast, an Appalachian Trail Thru-Hiker, an avid tea drinker, a book lover, and appreciator of pet rabbits. These days, when not at my computer working on a design or developing an application, I'm often found curled up with a book or working on a woodblock print.
         </p>
         <p>
             If you have questions, or just want to say hello, feel free to contact me.
@@ -149,52 +160,12 @@
     <div class="sidebar">
         <h4>Skills</h4>
         <ul>
-            <li><h6>Development</h6>
-                <ul>
-                    <li><strong>Languages/Tools</strong>
-                        <ul>
-                            <li>HTML5/CSS</li>
-                            <li>LESS/Sass</li>
-                            <li>JavaScript</li>
-                            <li>Handlebars.js</li>
-                            <li>AJAX/JSON</li>
-                            <li>PHP</li>
-                            <li>JAVA/JSP/FTL</li>
-                            <li>Node.js</li>
-                            <li>Git/SVN/Github</li>
-                            <li>Jira/Asana</li>
-                            <li>MAMP</li>
-                        </ul>
-                    </li>
-                    <li><strong>Frameworks/Libraries/CMS</strong>
-                        <ul>
-                            <li>Angular.js</li>
-                            <li>jQuery</li>
-                            <li>WordPress</li>
-                            <li>Magnolia</li>
-                            <li>Ghost</li>
-                            <li>Jekyll</li>
-                            <li>Twitter Bootstrap</li>
-                        </ul>
-                    </li>
-                    <li><strong>Best Practices</strong>
-                        <ul>
-                            <li>SEO</li>
-                            <li>Accessibility</li>
-                            <li>Mobile-first Design</li>
-                            <li>Responsive Design</li>
-                            <li>Social Media Integration</li>
-                            <li>Cross Browser Compatibility</li>
-                            <li>WordPress Template/Plugin Development</li>
-                            <li>Standards Based Code</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
             <li><h6>Design</h6>
                 <ul>
                     <li><strong>Programs</strong>
                         <ul>
+                            <li>Sketch</li>
+                            <li>InVision</li>
                             <li>Photoshop</li>
                             <li>Illustrator</li>
                             <li>InDesign</li>
@@ -203,10 +174,53 @@
                     <li><strong>Design Thinking</strong>
                         <ul>
                             <li>UI/UX</li>
+                            <li>Accessibility</li>
                             <li>Branding</li>
-                            <li>Logo Design</li>
                             <li>Icon Design</li>
+                            <li>Logo Design</li>
                             <li>Illustration</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h6>Development</h6>
+                <ul>
+                    <li><strong>Languages/Tools</strong>
+                        <ul>
+                            <li>HTML5/CSS</li>
+                            <li>LESS/Sass</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Handlebars.js</li>
+                            <li>AJAX/JSON</li>
+                            <li>REST APIs</li>
+                            <li>PHP</li>
+                            <li>Grunt</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Git/SVN/Github</li>
+                            <li>Jira/Asana</li>
+                        </ul>
+                    </li>
+                    <li><strong>Frameworks/Libraries/CMS</strong>
+                        <ul>
+                            <li>Angular.js</li>
+                            <li>Jekyll</li>
+                            <li>WordPress</li>
+                            <li>Magnolia</li>
+                            <li>Ghost</li>
+                            <li>Twitter Bootstrap</li>
+                            <li>Foundation</li>
+                        </ul>
+                    </li>
+                    <li><strong>Best Practices</strong>
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>Mobile-first Design</li>
+                            <li>Agile Methods</li>
+                            <li>Social Media Integration</li>
+                            <li>Cross Browser Compatibility</li>
+                            <li>WordPress Template/Plugin Development</li>
+                            <li>Standards Based Code</li>
                         </ul>
                     </li>
                 </ul>
@@ -257,7 +271,7 @@
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
                     <form id="contact-me" class="row" action="">
-                        <input type="hidden" name="_next" value="http://christypresler.com/thanks/" />
+                        <input type="hidden" name="_next" value="http://localhost:4000/thanks/" />
                         <input type="text" name="_gotcha" style="display:none" />
                         <input type="text" name="_format" value="plain" style="display:none" />
 
@@ -279,7 +293,7 @@
                     <div id="form-error"></div>
                 </div>
             </div>
-            <p class="copy">&copy; Christy Presler 2016</p>
+            <p class="copy">&copy; Christy Presler 2018</p>
         </div>
     </div> <!-- /.container -->
 </footer>

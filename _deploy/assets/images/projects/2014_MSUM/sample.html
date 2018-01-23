@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Carousel</title>
+<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+<div class="carouselContainer">
+  
+  <a id="prev" class="aNav" href="javascript:rotate('prev');"><i></i></a>
+
+  <div class="carouselWindow">
+    <div class="slideReel">
+
+      <div id="s1" class="slide"></div>
+      <!-- /slide -->
+
+      <div id="s2" class="slide"></div>
+      <!-- /slide -->
+
+      <div id="s3" class="slide"></div>
+      <!-- /slide -->
+
+      <div id="s4" class="slide"></div>
+      <!-- /slide -->
+  	</div>
+	</div>
+
+  <a id="next" class="aNav" href="javascript:rotate('next');"><i></i></a>
+  
+  <div class="pagingBar">	  
+	  <div class="status">
+      <a class="dot" href="#" rel="1"></a>
+      <a class="dot" href="#" rel="2"></a>
+      <a class="dot" href="#" rel="3"></a>
+      <a class="dot" href="#" rel="4"></a>
+    </div>
+	</div>
+
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="sample.js"></script>
+</body>
+</html>

@@ -4,11 +4,85 @@
     <title>Christy Presler</title>
     <description>Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 </description>
-    <link>http://christypresler.com//</link>
-    <atom:link href="http://christypresler.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Jun 2016 08:01:47 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Jun 2016 08:01:47 -0400</lastBuildDate>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 19 Jan 2018 09:06:24 -0500</pubDate>
+    <lastBuildDate>Fri, 19 Jan 2018 09:06:24 -0500</lastBuildDate>
     <generator>Jekyll v3.1.4</generator>
+    
+      <item>
+        <title>Command Line Basics</title>
+        <description>&lt;p&gt;Like a lot of people I found using the terminal intimidating when I first became a developer. It is a different way of navigating a computer and it can feel more opaque than the graphical interfaces that are now standard. As a visually minded person, I found it easy to feel lost with my available options hidden behind a command I have to remember. However the more I have learned about using the terminal, the more I realize that becoming familiar with the command line is an important part of familiarizing yourself with how an operating system functions. I don’t mean on the bits and bites level, but instead on an architectural and structural level.&lt;/p&gt;
+
+&lt;p&gt;To me, navigating a computer via the command line has always felt a bit like trying to cross without the lights on. Moving around the objects is considerably easier if you have a map of the objects in the room inside your brain. It is part of why I feel like teaching the command line to new developers is so important. It pushes people into an uncomfortable space because it forces them interact with their computers in a completely new way. In reality, the actions they are taking are the same as those they have been using all along when working on a computer, but changing the interface forces you to take a new look.&lt;/p&gt;
+
+&lt;p&gt;For my students at &lt;a href=&quot;http://startfastcode.com&quot;&gt;StartFast Code&lt;/a&gt; I put together an intro cheat sheet of basic commands to help them get started navigating and leveraging their computers in this new way. This list is not meant to be all encompassing, but is instead meant to display a few of the options available, and to make them easy to reference for new command line users who, in my experience, often feel like they really wish someone would just turn on the stupid light.&lt;/p&gt;
+
+&lt;h2 id=&quot;common-commands&quot;&gt;Common Commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;cd {directory name}&lt;/strong&gt; —————— change directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cd /&lt;/strong&gt; —————— go to root directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cd ~&lt;/strong&gt; —————— go to user home directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cd ..&lt;/strong&gt; —————— go up a level&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;pwd&lt;/strong&gt; —————— show current directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ls&lt;/strong&gt; —————— list contents of a directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ls -l&lt;/strong&gt; —————— list contents of a directory in list view (with details)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mkdir {directory name}&lt;/strong&gt; —————— make a directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;touch {filename}&lt;/strong&gt; —————— make a file&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;rm {filename}&lt;/strong&gt; —————— remove a file&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;rm -r {directory name}&lt;/strong&gt; —————— remove a directory and all its contents&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mv {filename} {new filename}&lt;/strong&gt; —————— rename a file or folder&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cp {filename} {new filename}&lt;/strong&gt; —————— copy file to another file/folder&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;open {filename}&lt;/strong&gt; —————— open file in default program&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;open {filename} -a “{program name}”&lt;/strong&gt; —————— open file in specific application&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;open .&lt;/strong&gt; —————— open current directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;-h&lt;/strong&gt; or &lt;strong&gt;–help&lt;/strong&gt; —————— list options available for a command&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;exit&lt;/strong&gt; —————— log out of current session&lt;/p&gt;
+
+&lt;h3 id=&quot;a-little-less-common-but-ones-i-have-found-useful&quot;&gt;A little less common, but ones I have found useful&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;ln -s /source /destination&lt;/strong&gt; —————— create a symbolic link (symlink)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ssh {user}@{hostname}&lt;/strong&gt; —————— connect to a host as a user&lt;/p&gt;
+
+&lt;h3 id=&quot;a-few-shortcuts&quot;&gt;A few shortcuts&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd + k&lt;/strong&gt; —————— clear terminal screen&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tab&lt;/strong&gt; —————— autocomplete&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;↑ ↓&lt;/strong&gt; —————— travel through your command history&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ctrl + c&lt;/strong&gt; —————— halt current command&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Feb 2017 11:00:00 -0500</pubDate>
+        <link>http://localhost:4000//blog/2017/common-command-line/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2017/common-command-line/</guid>
+        
+        
+        <category>development</category>
+        
+        <category>tools</category>
+        
+      </item>
     
       <item>
         <title>Origami Fish Icon</title>
@@ -16,13 +90,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-fish-01.jpg&quot; alt=&quot;origami fish icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-fish-01.jpg&quot; alt=&quot;origami fish icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:20 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-fish/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-fish/</guid>
+        <link>http://localhost:4000//blog/2014/origami-fish/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-fish/</guid>
         
         
         <category>design</category>
@@ -39,13 +113,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-giraffe-01.jpg&quot; alt=&quot;origami giraffe icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-giraffe-01.jpg&quot; alt=&quot;origami giraffe icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:15 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-giraffe/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-giraffe/</guid>
+        <link>http://localhost:4000//blog/2014/origami-giraffe/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-giraffe/</guid>
         
         
         <category>design</category>
@@ -62,13 +136,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-hummingbird-01.jpg&quot; alt=&quot;origami hummingbird icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-hummingbird-01.jpg&quot; alt=&quot;origami hummingbird icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:10 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-hummingbird/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-hummingbird/</guid>
+        <link>http://localhost:4000//blog/2014/origami-hummingbird/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-hummingbird/</guid>
         
         
         <category>design</category>
@@ -85,13 +159,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-horse-01.jpg&quot; alt=&quot;origami horse icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-horse-01.jpg&quot; alt=&quot;origami horse icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:05 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-horse/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-horse/</guid>
+        <link>http://localhost:4000//blog/2014/origami-horse/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-horse/</guid>
         
         
         <category>design</category>
@@ -108,13 +182,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-bat-01.jpg&quot; alt=&quot;origami bat icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-bat-01.jpg&quot; alt=&quot;origami bat icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:00 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-bat/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-bat/</guid>
+        <link>http://localhost:4000//blog/2014/origami-bat/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-bat/</guid>
         
         
         <category>design</category>
@@ -131,13 +205,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/swan-origami-01.jpg&quot; alt=&quot;origami swan icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/swan-origami-01.jpg&quot; alt=&quot;origami swan icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:30 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-swan/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-swan/</guid>
+        <link>http://localhost:4000//blog/2014/origami-swan/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-swan/</guid>
         
         
         <category>design</category>
@@ -154,13 +228,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-lion-01.jpg&quot; alt=&quot;origami lion icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-lion-01.jpg&quot; alt=&quot;origami lion icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:25 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-lion/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-lion/</guid>
+        <link>http://localhost:4000//blog/2014/origami-lion/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-lion/</guid>
         
         
         <category>design</category>
@@ -177,13 +251,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-owl-01.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-owl-01.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:20 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-owl/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-owl/</guid>
+        <link>http://localhost:4000//blog/2014/origami-owl/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-owl/</guid>
         
         
         <category>design</category>
@@ -200,44 +274,18 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/butterfly-origami-01.jpg&quot; alt=&quot;origami butterfly icon&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/butterfly-origami-01.jpg&quot; alt=&quot;origami butterfly icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:15 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-butterfly/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-butterfly/</guid>
+        <link>http://localhost:4000//blog/2014/origami-butterfly/</link>
+        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-butterfly/</guid>
         
         
         <category>design</category>
         
         <category>icons</category>
-        
-      </item>
-    
-      <item>
-        <title>Origami Rat Icon</title>
-        <description>&lt;p&gt;So I realize that rats and mice are very similar in some respects and that I have already made an &lt;a href=&quot;http://localhost:4000/blog/2014/origami-mouse/&quot;&gt;origami mouse&lt;/a&gt; 
-icon, but then I came across this really great origami rat. It had way to much fun character to pass up, so here is my depiction of it:&lt;/p&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-rat-01.jpg&quot; alt=&quot;origami rat icon&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I tried to keep the rat’s slightly sinister air, in addition to some of the really soft folds that made up parts of his body like his ears. The paper edge running across the origami rat’s face seemed to add to his character, though it does give him a slightly pirate-ish appearance.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Mar 2014 12:00:10 -0400</pubDate>
-        <link>http://christypresler.com//blog/2014/origami-rat/</link>
-        <guid isPermaLink="true">http://christypresler.com//blog/2014/origami-rat/</guid>
-        
-        
-        <category>design</category>
-        
-        <category>icons</category>
-        
-        <category>origami</category>
         
       </item>
     
