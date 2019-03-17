@@ -4,10 +4,10 @@
     <title>Christy Presler</title>
     <description>Christy Presler is a Web Developer and Designer who is passionate about building intuitive user experiences that solve real problems for people.
 </description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Jan 2018 09:06:24 -0500</pubDate>
-    <lastBuildDate>Fri, 19 Jan 2018 09:06:24 -0500</lastBuildDate>
+    <link>http://christypresler.com/</link>
+    <atom:link href="http://christypresler.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 17 Mar 2019 17:32:40 -0400</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2019 17:32:40 -0400</lastBuildDate>
     <generator>Jekyll v3.1.4</generator>
     
       <item>
@@ -74,8 +74,8 @@
 
 </description>
         <pubDate>Thu, 23 Feb 2017 11:00:00 -0500</pubDate>
-        <link>http://localhost:4000//blog/2017/common-command-line/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2017/common-command-line/</guid>
+        <link>http://christypresler.com/blog/2017/common-command-line/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2017/common-command-line/</guid>
         
         
         <category>development</category>
@@ -90,13 +90,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-fish-01.jpg&quot; alt=&quot;origami fish icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-fish-01.jpg&quot; alt=&quot;origami fish icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:20 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-fish/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-fish/</guid>
+        <link>http://christypresler.com/blog/2014/origami-fish/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-fish/</guid>
         
         
         <category>design</category>
@@ -113,13 +113,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-giraffe-01.jpg&quot; alt=&quot;origami giraffe icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-giraffe-01.jpg&quot; alt=&quot;origami giraffe icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:15 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-giraffe/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-giraffe/</guid>
+        <link>http://christypresler.com/blog/2014/origami-giraffe/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-giraffe/</guid>
         
         
         <category>design</category>
@@ -136,13 +136,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-hummingbird-01.jpg&quot; alt=&quot;origami hummingbird icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-hummingbird-01.jpg&quot; alt=&quot;origami hummingbird icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:10 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-hummingbird/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-hummingbird/</guid>
+        <link>http://christypresler.com/blog/2014/origami-hummingbird/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-hummingbird/</guid>
         
         
         <category>design</category>
@@ -159,13 +159,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-horse-01.jpg&quot; alt=&quot;origami horse icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-horse-01.jpg&quot; alt=&quot;origami horse icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:05 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-horse/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-horse/</guid>
+        <link>http://christypresler.com/blog/2014/origami-horse/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-horse/</guid>
         
         
         <category>design</category>
@@ -182,13 +182,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-bat-01.jpg&quot; alt=&quot;origami bat icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-bat-01.jpg&quot; alt=&quot;origami bat icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 27 Mar 2014 12:00:00 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-bat/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-bat/</guid>
+        <link>http://christypresler.com/blog/2014/origami-bat/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-bat/</guid>
         
         
         <category>design</category>
@@ -205,13 +205,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/swan-origami-01.jpg&quot; alt=&quot;origami swan icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/swan-origami-01.jpg&quot; alt=&quot;origami swan icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:30 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-swan/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-swan/</guid>
+        <link>http://christypresler.com/blog/2014/origami-swan/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-swan/</guid>
         
         
         <category>design</category>
@@ -228,13 +228,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-lion-01.jpg&quot; alt=&quot;origami lion icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-lion-01.jpg&quot; alt=&quot;origami lion icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:25 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-lion/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-lion/</guid>
+        <link>http://christypresler.com/blog/2014/origami-lion/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-lion/</guid>
         
         
         <category>design</category>
@@ -251,13 +251,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/origami-owl-01.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/origami-owl-01.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:20 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-owl/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-owl/</guid>
+        <link>http://christypresler.com/blog/2014/origami-owl/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-owl/</guid>
         
         
         <category>design</category>
@@ -274,13 +274,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/blog/2014/03/butterfly-origami-01.jpg&quot; alt=&quot;origami butterfly icon&quot; /&gt;
+        &lt;img src=&quot;http://christypresler.com/assets/images/blog/2014/03/butterfly-origami-01.jpg&quot; alt=&quot;origami butterfly icon&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 19 Mar 2014 12:00:15 -0400</pubDate>
-        <link>http://localhost:4000//blog/2014/origami-butterfly/</link>
-        <guid isPermaLink="true">http://localhost:4000//blog/2014/origami-butterfly/</guid>
+        <link>http://christypresler.com/blog/2014/origami-butterfly/</link>
+        <guid isPermaLink="true">http://christypresler.com/blog/2014/origami-butterfly/</guid>
         
         
         <category>design</category>

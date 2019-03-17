@@ -62,9 +62,13 @@
 </footer>
 
 <!-- Scripts -->
-<script  async src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-<script  async src="{{ site.baseurl }}assets/js/vendor/bootstrap.min.js"></script>
-<script async src="{{ site.baseurl }}assets/js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<!--{% if site.url == "http://localhost:4000" %}-->
+<!--<script asyng src="{{ site.url }}assets/js/vendor/jquery-2.2.3.min.js"></script>-->
+<!--{% endif %}-->
+<script  async src="{{ site.url }}assets/js/vendor/bootstrap.min.js"></script>
+<script async src="{{ site.url }}assets/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
